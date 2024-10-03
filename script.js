@@ -62,7 +62,7 @@ function conteudo_1_click() {
         creditos.style.marginTop = `5%`
         linha_2.style.width = `90%`
         linha_2.style.height = `0.25em`
-        video_aula.innerHTML = `<iframe id="video" src="https://youtu.be/f1prnafhQtE?si=aPspehF7m75o3cAa" frameborder="0" allowfullscreen></iframe>`
+        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/f1prnafhQtE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
         area_questoes.style.width = `30%`
         area_questoes.style.height = `35vw`
         questao_1.innerText = `Questão - 1`
@@ -83,7 +83,8 @@ function conteudo_1_click() {
         creditos.style.marginTop = `5%`
         linha_2.style.width = `90%`
         linha_2.style.height = `0.25em`
-        video_aula.innerHTML = `<iframe id="video" src="https://youtu.be/fJIadgJQzHw?si=CTx2XXvvZMuwNkOd" frameborder="0" allowfullscreen></iframe>`
+        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/fJIadgJQzHw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+`
         area_questoes.style.width = `30%`
         area_questoes.style.height = `35vw`
         questao_1.innerText = `Questão - 1`
