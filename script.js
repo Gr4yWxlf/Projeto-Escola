@@ -62,9 +62,9 @@ function conteudo_1_click() {
         creditos.style.marginTop = `5%`
         linha_2.style.width = `90%`
         linha_2.style.height = `0.25em`
-        video_aula.innerHTML = `<iframe id="video" width="920" height="460" src="https://youtu.be/f1prnafhQtE?si=aPspehF7m75o3cAa" frameborder="0" allowfullscreen></iframe>`
+        video_aula.innerHTML = `<iframe id="video" src="https://youtu.be/f1prnafhQtE?si=aPspehF7m75o3cAa" frameborder="0" allowfullscreen></iframe>`
         area_questoes.style.width = `30%`
-        area_questoes.style.height = `30em`
+        area_questoes.style.height = `35vw`
         questao_1.innerText = `Questão - 1`
         questao_2.innerText = `Questão - 2`
         questao_3.innerText = `Questão - 3`
@@ -83,9 +83,9 @@ function conteudo_1_click() {
         creditos.style.marginTop = `5%`
         linha_2.style.width = `90%`
         linha_2.style.height = `0.25em`
-        video_aula.innerHTML = `<iframe id="video" width="920" height="460" src="https://youtu.be/fJIadgJQzHw?si=CTx2XXvvZMuwNkOd" frameborder="0" allowfullscreen></iframe>`
+        video_aula.innerHTML = `<iframe id="video" src="https://youtu.be/fJIadgJQzHw?si=CTx2XXvvZMuwNkOd" frameborder="0" allowfullscreen></iframe>`
         area_questoes.style.width = `30%`
-        area_questoes.style.height = `30em`
+        area_questoes.style.height = `35vw`
         questao_1.innerText = `Questão - 1`
         questao_2.innerText = `Questão - 2`
         questao_3.innerText = `Questão - 3`
@@ -106,7 +106,7 @@ function questao_1_click() {
         if (conteudo_atual == 1) {
             video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Qual das alternativas abaixo descreve corretamente a Primeira Lei de Newton (Lei da Inércia)?</p></div>`
             alternativas_area.style.width = `75%`
-            alternativas_area.style.height = `25em`
+            alternativas_area.style.height = `30vw`
             alternativa_1.innerText = `A) ${respotas_fisica_mecanica_questao_1[0]}`
             alternativa_2.innerText = `B) ${respotas_fisica_mecanica_questao_1[1]}`
             alternativa_3.innerText = `C) ${respotas_fisica_mecanica_questao_1[2]}`
@@ -118,7 +118,7 @@ function questao_1_click() {
         if (conteudo_atual == 1) {
             video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Qual das alternativas a seguir corresponde à força intermolecular mais forte?</p></div>`
             alternativas_area.style.width = `75%`
-            alternativas_area.style.height = `25em`
+            alternativas_area.style.height = `30vw`
             alternativa_1.innerText = `A) ${respotas_quimica_forcasintermoleculares_questao_1[0]}`
             alternativa_2.innerText = `B) ${respotas_quimica_forcasintermoleculares_questao_1[1]}`
             alternativa_3.innerText = `C) ${respotas_quimica_forcasintermoleculares_questao_1[2]}`
