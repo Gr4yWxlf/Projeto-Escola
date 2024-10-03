@@ -72,10 +72,11 @@ body {
 }
 
 #video {
-    width: 65%;
-    height: 35vw;
-    margin-left: -32%;
+    width: 70%; /* 100% para ocupar toda a largura disponível */
+    height: 35vw; /* Altura automática para manter a proporção */
+    max-height: 35vw; /* Limita a altura máxima, se necessário */
     transition-duration: 0.5s;
+    margin-left: -32%;
 }
 
 #area_questoes{

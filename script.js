@@ -58,49 +58,49 @@ function selecionado_quimica_materia() {
 
 function conteudo_1_click() {
     if (materia_atual == 1) {
-        conteudo_atual = 1
-        creditos.style.marginTop = `5%`
-        linha_2.style.width = `90%`
-        linha_2.style.height = `0.25em`
-        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/f1prnafhQtE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-        area_questoes.style.width = `30%`
-        area_questoes.style.height = `35vw`
-        questao_1.innerText = `Questão - 1`
-        questao_2.innerText = `Questão - 2`
-        questao_3.innerText = `Questão - 3`
-        questao_4.innerText = `Questão - 4`
-        questao_5.innerText = `Questão - 5`
-        alternativas_area.style.width = `0%`
-        alternativas_area.style.height = `0em`
-        alternativa_1.innerText = ``
-        alternativa_2.innerText = ``
-        alternativa_3.innerText = ``
-        alternativa_4.innerText = ``
-        alternativa_5.innerText = ``
+        conteudo_atual = 1;
+        creditos.style.marginTop = `5%`;
+        linha_2.style.width = `90%`;
+        linha_2.style.height = `0.25em`;
+        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/f1prnafhQtE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        area_questoes.style.width = `30%`;
+        area_questoes.style.height = `35vw`;
+        questao_1.innerText = `Questão - 1`;
+        questao_2.innerText = `Questão - 2`;
+        questao_3.innerText = `Questão - 3`;
+        questao_4.innerText = `Questão - 4`;
+        questao_5.innerText = `Questão - 5`;
+        alternativas_area.style.width = `0%`;
+        alternativas_area.style.height = `0em`;
+        alternativa_1.innerText = ``;
+        alternativa_2.innerText = ``;
+        alternativa_3.innerText = ``;
+        alternativa_4.innerText = ``;
+        alternativa_5.innerText = ``;
     }
     if (materia_atual == 2) {
-        conteudo_atual = 1
-        creditos.style.marginTop = `5%`
-        linha_2.style.width = `90%`
-        linha_2.style.height = `0.25em`
-        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/fJIadgJQzHw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-`
-        area_questoes.style.width = `30%`
-        area_questoes.style.height = `35vw`
-        questao_1.innerText = `Questão - 1`
-        questao_2.innerText = `Questão - 2`
-        questao_3.innerText = `Questão - 3`
-        questao_4.innerText = `Questão - 4`
-        questao_5.innerText = `Questão - 5`
-        alternativas_area.style.width = `0%`
-        alternativas_area.style.height = `0em`
-        alternativa_1.innerText = ``
-        alternativa_2.innerText = ``
-        alternativa_3.innerText = ``
-        alternativa_4.innerText = ``
-        alternativa_5.innerText = ``
+        conteudo_atual = 1;
+        creditos.style.marginTop = `5%`;
+        linha_2.style.width = `90%`;
+        linha_2.style.height = `0.25em`;
+        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/fJIadgJQzHw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        area_questoes.style.width = `30%`;
+        area_questoes.style.height = `35vw`;
+        questao_1.innerText = `Questão - 1`;
+        questao_2.innerText = `Questão - 2`;
+        questao_3.innerText = `Questão - 3`;
+        questao_4.innerText = `Questão - 4`;
+        questao_5.innerText = `Questão - 5`;
+        alternativas_area.style.width = `0%`;
+        alternativas_area.style.height = `0em`;
+        alternativa_1.innerText = ``;
+        alternativa_2.innerText = ``;
+        alternativa_3.innerText = ``;
+        alternativa_4.innerText = ``;
+        alternativa_5.innerText = ``;
     }
 }
+
 
 function questao_1_click() {
     if (materia_atual == 1) {
