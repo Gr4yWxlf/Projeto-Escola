@@ -9,7 +9,7 @@ let conteudo_2 = document.getElementById("conteudo_2")
 let conteudo_3 = document.getElementById("conteudo_3")
 conteudo_1.addEventListener("click", conteudo_1_click)
 
-
+let video_aula = document.getElementById("video_aula")
 
 
 let botao_fisica_materia = document.getElementById("fisica_icone_botao")
@@ -25,13 +25,13 @@ function selecionado_fisica_materia() {
     materia_selecionada.innerText = `Física`
     linha.style.width = `90%`
     linha.style.height = `0.25em`
-    conteudo_1.style.width = `45%`
+    conteudo_1.style.width = `20em`
     conteudo_1.style.height = `2em`
     conteudo_1.innerText = `Mecânica`
-    conteudo_2.style.width = `45%`
+    conteudo_2.style.width = `20em`
     conteudo_2.style.height = `2em`
     conteudo_2.innerText = `Cinemática`
-    conteudo_3.style.width = `45%`
+    conteudo_3.style.width = `20em`
     conteudo_3.style.height = `2em`
     conteudo_3.innerText = `Velocidade Escalar Média e Instantânea`
 }
@@ -53,8 +53,11 @@ function conteudo_1_click() {
     if (materia_atual == 1) {
         linha_2.style.width = `90%`
         linha_2.style.height = `0.25em`
+        video_aula.innerHTML = `<iframe id="video" width="70%" height="600vw" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+`
     } else {
         linha_2.style.width = `0%`
         linha_2.style.height = `0em`
+        video_aula.innerHTML = `<iframe id="video" width="0%" height="0vw" src="" frameborder="0" allowfullscreen></iframe>`
     }
 }

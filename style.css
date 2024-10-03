@@ -58,7 +58,7 @@ body {
 
 #conteudo_1, #conteudo_2, #conteudo_3 {
     cursor: pointer;
-    font: bold 150% arial;
+    font: bold 125% arial;
     width: 0%;
     height: 0em;
     border-radius: 5%;
@@ -69,6 +69,10 @@ body {
     color: black;
     line-height: 2em;
     transition-duration: 0.5s;
+}
+
+#video {
+    margin-left: -25%;
 }
 
 #creditos{
