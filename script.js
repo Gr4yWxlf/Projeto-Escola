@@ -53,7 +53,7 @@ function conteudo_1_click() {
     if (materia_atual == 1) {
         linha_2.style.width = `90%`
         linha_2.style.height = `0.25em`
-        video_aula.innerHTML = `<iframe id="video" width="70%" height="600vw" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        video_aula.innerHTML = `<iframe id="video" width="560" height="315" src="https://www.youtube.com/watch?v=f1prnafhQtE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 `
     } else {
         linha_2.style.width = `0%`
