@@ -1,3 +1,4 @@
+/* fundo do site e seu corpo em geral */
 body {
     background-color: rgb(26, 26, 26);
     color: white;
@@ -5,6 +6,7 @@ body {
     text-align: center;
 }
 
+/* area para ficar os icones da materia e toda configurações para os icones imagens e seus textos abaixo dos icons */
 #area_icones_materias{
     display: grid;
     gap: 1em 1em;
@@ -21,6 +23,8 @@ body {
     font: bold 150% Arial;
     color: black;
 }
+
+/* Separador de foco */
 #linha{
     background-color: white;
     width: 0%;
@@ -38,6 +42,7 @@ body {
     transition-duration: 0.5s;
 }
 
+/* Icone para selecionar a materia */
 #fisica_icone_botao {
     cursor: pointer;
     margin: auto;
@@ -53,9 +58,18 @@ body {
     height: 12em;
     background-color: snow;
     border-radius: 5%;
+}
+#portugues_icone_botao {
+    cursor: pointer;
+    margin: auto;
+    width: 12em;
+    height: 12em;
+    background-color: snow;
+    border-radius: 5%;
     margin-bottom: 1%;
 }
 
+/* Selecionar o conteudo para a materia */
 #conteudo_1, #conteudo_2, #conteudo_3 {
     cursor: pointer;
     font: bold 125% arial;
@@ -71,6 +85,7 @@ body {
     transition-duration: 0.5s;
 }
 
+/* formato padrão dos videos */
 #video {
     width: 70%; /* 100% para ocupar toda a largura disponível */
     height: 35vw; /* Altura automática para manter a proporção */
@@ -79,6 +94,7 @@ body {
     margin-left: -32%;
 }
 
+/* area que fica as questões e questões */
 #area_questoes{
     margin-left: 69%;
     margin-top: -35%;
@@ -100,7 +116,6 @@ body {
     color: black;
     line-height: 6vw;
 }
-
 #questoes {
     width: 68%;
     height: 35vw;
@@ -114,6 +129,8 @@ body {
     line-height: 3vw;
     text-align: center;
 }
+
+/* area das alternativas e suas alternativas */
 #alternativas {
     margin-top: 1%;
     background-color: rgba(255, 255, 255, 0);
@@ -127,7 +144,7 @@ body {
 }
 #alternativa_1, #alternativa_2, #alternativa_3, #alternativa_4, #alternativa_5 {
     cursor: pointer;
-    font: bold 1vw Arial;
+    font: bold 80% Arial;
     background-color: rgba(255, 255, 255, 0.11);
     line-height: 3vw;
     width: 100%;
@@ -138,7 +155,7 @@ body {
     text-align: start;
 }
 
-
+/* roda-pé */
 #creditos{
     font: normal 100% Arial;
     margin-top: 38%;
