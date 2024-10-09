@@ -133,7 +133,6 @@ body {
 /* area das alternativas e suas alternativas */
 #alternativas {
     margin-top: 1%;
-    background-color: rgba(255, 255, 255, 0);
     width: 0%;
     height: 0vw;
     border-radius: 10%;

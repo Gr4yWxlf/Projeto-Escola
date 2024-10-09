@@ -336,6 +336,13 @@ function questao_1_click() {
     questao_3.style.backgroundColor = `rgb(255, 255, 255)`
     questao_4.style.backgroundColor = `rgb(255, 255, 255)`
     questao_5.style.backgroundColor = `rgb(255, 255, 255)`
+
+    alternativa_1.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_2.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_3.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_4.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_5.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+                    
     if (materia_atual == 1) {
         /* ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ FISICA ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ */
         if (conteudo_atual == 1) {
@@ -404,6 +411,13 @@ function questao_2_click() {
     questao_3.style.backgroundColor = `rgb(255, 255, 255)`
     questao_4.style.backgroundColor = `rgb(255, 255, 255)`
     questao_5.style.backgroundColor = `rgb(255, 255, 255)`
+
+    alternativa_1.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_2.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_3.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_4.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_5.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+     
     if (materia_atual == 1) {
         /* ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ FISICA ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ */
         if (conteudo_atual == 1) {
@@ -472,6 +486,13 @@ function questao_3_click() {
     questao_3.style.backgroundColor = `rgb(120, 120, 120)`
     questao_4.style.backgroundColor = `rgb(255, 255, 255)`
     questao_5.style.backgroundColor = `rgb(255, 255, 255)`
+
+    alternativa_1.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_2.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_3.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_4.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_5.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+     
     if (materia_atual == 1) {
         /* ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ FISICA ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ */
         if (conteudo_atual == 1) {
@@ -540,6 +561,13 @@ function questao_4_click() {
     questao_3.style.backgroundColor = `rgb(255, 255, 255)`
     questao_4.style.backgroundColor = `rgb(120, 120, 120)`
     questao_5.style.backgroundColor = `rgb(255, 255, 255)`
+
+    alternativa_1.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_2.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_3.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_4.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_5.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+     
     if (materia_atual == 1) {
         /* ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ FISICA ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ */
         if (conteudo_atual == 1) {
@@ -608,6 +636,13 @@ function questao_5_click() {
     questao_3.style.backgroundColor = `rgb(255, 255, 255)`
     questao_4.style.backgroundColor = `rgb(255, 255, 255)`
     questao_5.style.backgroundColor = `rgb(120, 120, 120)`
+
+    alternativa_1.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_2.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_3.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_4.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+    alternativa_5.style.backgroundColor = `rgb(255, 255, 255, 0.11)`
+     
     if (materia_atual == 1) {
         /* ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ FISICA ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ */
         if (conteudo_atual == 1) {
@@ -706,9 +741,21 @@ function respondido_alternativa() {
         if (conteudo_atual == 1) {
             if (questao_atual == 1) {
                 if (alternativa_selecionada == 2) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
@@ -716,36 +763,84 @@ function respondido_alternativa() {
             }
             if (questao_atual == 2) {
                 if (alternativa_selecionada == 3) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
             }
             if (questao_atual == 3) {
                 if (alternativa_selecionada == 3) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
             }
             if (questao_atual == 4) {
                 if (alternativa_selecionada == 5) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(0, 128, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(0, 128, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
             }
             if (questao_atual == 5) {
                 if (alternativa_selecionada == 1) {
+                    alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
@@ -755,45 +850,105 @@ function respondido_alternativa() {
         if (conteudo_atual == 2) {
             if (questao_atual == 1) {
                 if (alternativa_selecionada == 3) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
             }
             if (questao_atual == 2) {
                 if (alternativa_selecionada == 2) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
             }
             if (questao_atual == 3) {
                 if (alternativa_selecionada == 3) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
             }
             if (questao_atual == 4) {
                 if (alternativa_selecionada == 3) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
             }
             if (questao_atual == 5) {
                 if (alternativa_selecionada == 2) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
@@ -806,45 +961,105 @@ function respondido_alternativa() {
         if (conteudo_atual == 1) {
             if (questao_atual == 1) {
                 if (alternativa_selecionada == 4) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
             }
             if (questao_atual == 2) {
                 if (alternativa_selecionada == 1) {
+                    alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
             }
             if (questao_atual == 3) {
                 if (alternativa_selecionada == 1) {
+                    alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
             }
             if (questao_atual == 4) {
                 if (alternativa_selecionada == 1) {
+                    alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
             }
             if (questao_atual == 5) {
                 if (alternativa_selecionada == 2) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 } 
@@ -854,45 +1069,105 @@ function respondido_alternativa() {
         if (conteudo_atual == 2) {
             if (questao_atual == 1) {
                 if (alternativa_selecionada == 2) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
             }
             if (questao_atual == 2) {
                 if (alternativa_selecionada == 3) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 } 
             }
             if (questao_atual == 3) {
                 if (alternativa_selecionada == 3) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
             }
             if (questao_atual == 4) {
                 if (alternativa_selecionada == 4) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
             }
             if (questao_atual == 5) {
                 if (alternativa_selecionada == 2) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
@@ -905,45 +1180,105 @@ function respondido_alternativa() {
         if (conteudo_atual == 1) {
             if (questao_atual == 1) {
                 if (alternativa_selecionada == 2) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
             }
             if (questao_atual == 2) {
                 if (alternativa_selecionada == 2) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
             }
             if (questao_atual == 3) {
                 if (alternativa_selecionada == 2) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
             }
             if (questao_atual == 4) {
                 if (alternativa_selecionada == 2) {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
             }
             if (questao_atual == 5) {
                 if (alternativa_selecionada == 1) {
+                    alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
                 } else {
+                    alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
                     var alternativa_certa_som = new Audio('audios/errado.mp3')
                     alternativa_certa_som.play()
                 }
