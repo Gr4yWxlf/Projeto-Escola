@@ -6,11 +6,11 @@ let respotas_fisica_mecanica_questao_3 = ["2 m/s²", "3 m/s²", "4 m/s²", "5 m/
 let respotas_fisica_mecanica_questao_4 = ["100 J", "200 J", "300 J", "400 J", "500 J"]
 let respotas_fisica_mecanica_questao_5 = ["0 N", "2000 N", "4000 N", "6000 N", "8000 N"]
 
-let respotas_fisica_cinematica_questao_1 = ["", "", "", "", ""]
-let respotas_fisica_cinematica_questao_2 = ["", "", "", "", ""]
-let respotas_fisica_cinematica_questao_3 = ["", "", "", "", ""]
-let respotas_fisica_cinematica_questao_4 = ["", "", "", "", ""]
-let respotas_fisica_cinematica_questao_5 = ["", "", "", "", ""]
+let respotas_fisica_cinematica_questao_1 = ["20 km/h", "25 km/h", "30 km/h", "35 km/h", "40 km/h"]
+let respotas_fisica_cinematica_questao_2 = ["5 s", "6 s", "7 s", "8 s", "9 s"]
+let respotas_fisica_cinematica_questao_3 = ["0,5 h", "1 h", "1,5 h", "2 h", "2,5 h"]
+let respotas_fisica_cinematica_questao_4 = ["50 m", "100 m", "150 m", "200 m", "300 m"]
+let respotas_fisica_cinematica_questao_5 = ["1 s", "2 s", "3 s", "4 s", "5 s"]
 
 /* Quimica */
 let respotas_quimica_forcasintermoleculares_questao_1 = ["Forças de London (dispersão).", "Ligações de hidrogênio.", "Forças dipolo-dipolo.", "Interações íon-dipolo.", "Nenhuma."]
@@ -676,47 +676,127 @@ alternativa_3.addEventListener("click", respondido_alternativa_3)
 alternativa_4.addEventListener("click", respondido_alternativa_4)
 alternativa_5.addEventListener("click", respondido_alternativa_5)
 
-/*if (resposta_1 == `A) ${respotas_fisica_mecanica_questao_1[0]}`) {
-        window.alert("correto")
-    }*/
+var alternativa_selecionada = 0
+
 function respondido_alternativa_1() {
-    var resposta_1 = alternativa_1.innerText || alternativa_1.textContent;
+    alternativa_selecionada = 1
+    respondido_alternativa()
+}
+function respondido_alternativa_2() {
+    alternativa_selecionada = 2
+    respondido_alternativa()
+}
+function respondido_alternativa_3() {
+    alternativa_selecionada = 3
+    respondido_alternativa()
+}
+function respondido_alternativa_4() {
+    alternativa_selecionada = 4
+    respondido_alternativa()
+}
+function respondido_alternativa_5() {
+    alternativa_selecionada = 5
+    respondido_alternativa()
+}
+
+function respondido_alternativa() {
     /* ~~~~~~~~~~~~~~~~ FISICA ~~~~~~~~~~~~~~~*/
     if (materia_atual == 1) {
         /* ~~~~~~~~~~~~~~~~ MECANICA ~~~~~~~~~~~~~~~*/
         if (conteudo_atual == 1) {
             if (questao_atual == 1) {
-
+                if (alternativa_selecionada == 2) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
+                
             }
             if (questao_atual == 2) {
-                
+                if (alternativa_selecionada == 3) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
             if (questao_atual == 3) {
-                
+                if (alternativa_selecionada == 3) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
             if (questao_atual == 4) {
-                
+                if (alternativa_selecionada == 5) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
             if (questao_atual == 5) {
-                
+                if (alternativa_selecionada == 1) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
         }
         /* ~~~~~~~~~~~~~~~~ CINEMATICA ~~~~~~~~~~~~~~~*/
         if (conteudo_atual == 2) {
             if (questao_atual == 1) {
-
+                if (alternativa_selecionada == 3) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
             if (questao_atual == 2) {
-                
+                if (alternativa_selecionada == 2) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
             if (questao_atual == 3) {
-                
+                if (alternativa_selecionada == 3) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
             if (questao_atual == 4) {
-                
+                if (alternativa_selecionada == 3) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
             if (questao_atual == 5) {
-                
+                if (alternativa_selecionada == 2) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
         }
     }
@@ -725,37 +805,97 @@ function respondido_alternativa_1() {
         /* ~~~~~~~~~~~~~~~~ INTERMOLECULARES ~~~~~~~~~~~~~~~*/
         if (conteudo_atual == 1) {
             if (questao_atual == 1) {
-
+                if (alternativa_selecionada == 4) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
             if (questao_atual == 2) {
-                
+                if (alternativa_selecionada == 1) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
             if (questao_atual == 3) {
-                
+                if (alternativa_selecionada == 1) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
             if (questao_atual == 4) {
-                
+                if (alternativa_selecionada == 1) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
             if (questao_atual == 5) {
-                
+                if (alternativa_selecionada == 2) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                } 
             }
         }
         /* ~~~~~~~~~~~~~~~~ ESTIQUIOMETRIA ~~~~~~~~~~~~~~~*/
         if (conteudo_atual == 2) {
             if (questao_atual == 1) {
-
+                if (alternativa_selecionada == 2) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
             if (questao_atual == 2) {
-                
+                if (alternativa_selecionada == 3) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                } 
             }
             if (questao_atual == 3) {
-                
+                if (alternativa_selecionada == 3) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
             if (questao_atual == 4) {
-                
+                if (alternativa_selecionada == 4) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
             if (questao_atual == 5) {
-                
+                if (alternativa_selecionada == 2) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
         }   
     }
@@ -764,388 +904,55 @@ function respondido_alternativa_1() {
         /* ~~~~~~~~~~~~~~~~ ORAÇÕES ~~~~~~~~~~~~~~~*/
         if (conteudo_atual == 1) {
             if (questao_atual == 1) {
-
+                if (alternativa_selecionada == 2) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
             if (questao_atual == 2) {
-                
+                if (alternativa_selecionada == 2) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
             if (questao_atual == 3) {
-                
+                if (alternativa_selecionada == 2) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
             if (questao_atual == 4) {
-                
+                if (alternativa_selecionada == 2) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
             if (questao_atual == 5) {
-                
+                if (alternativa_selecionada == 1) {
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
             }
         }
     }
 }
 
 /* ~~~~~~~~~~~~~~~~ ======================================================================================================== ~~~~~~~~~~~~~~~*/
-function respondido_alternativa_2() {
-    var resposta_2 = alternativa_2.innerText || alternativa_2.textContent;
-    if (materia_atual == 1) {
-        if (conteudo_atual == 1) {
-            if (questao_atual == 1) {
 
-            }
-            if (questao_atual == 2) {
-                
-            }
-            if (questao_atual == 3) {
-                
-            }
-            if (questao_atual == 4) {
-                
-            }
-            if (questao_atual == 5) {
-                
-            }
-        }
-        if (conteudo_atual == 2) {
-            if (questao_atual == 1) {
-
-            }
-            if (questao_atual == 2) {
-                
-            }
-            if (questao_atual == 3) {
-                
-            }
-            if (questao_atual == 4) {
-                
-            }
-            if (questao_atual == 5) {
-                
-            }
-        }
-    }
-    if (materia_atual == 2) {
-        if (conteudo_atual == 1) {
-            if (questao_atual == 1) {
-
-            }
-            if (questao_atual == 2) {
-                
-            }
-            if (questao_atual == 3) {
-                
-            }
-            if (questao_atual == 4) {
-                
-            }
-            if (questao_atual == 5) {
-                
-            }
-        }
-        if (conteudo_atual == 2) {
-            if (questao_atual == 1) {
-
-            }
-            if (questao_atual == 2) {
-                
-            }
-            if (questao_atual == 3) {
-                
-            }
-            if (questao_atual == 4) {
-                
-            }
-            if (questao_atual == 5) {
-                
-            }
-        }
-    }
-    if (materia_atual == 3) {
-        if (conteudo_atual == 1) {
-            if (questao_atual == 1) {
-
-            }
-            if (questao_atual == 2) {
-                
-            }
-            if (questao_atual == 3) {
-                
-            }
-            if (questao_atual == 4) {
-                
-            }
-            if (questao_atual == 5) {
-                
-            }
-        }
-    }
-}
-function respondido_alternativa_3() {
-    var resposta_3 = alternativa_3.innerText || alternativa_2.textContent;
-    if (materia_atual == 1) {
-        if (conteudo_atual == 1) {
-            if (questao_atual == 1) {
-
-            }
-            if (questao_atual == 2) {
-                
-            }
-            if (questao_atual == 3) {
-                
-            }
-            if (questao_atual == 4) {
-                
-            }
-            if (questao_atual == 5) {
-                
-            }
-        }
-        if (conteudo_atual == 2) {
-            if (questao_atual == 1) {
-
-            }
-            if (questao_atual == 2) {
-                
-            }
-            if (questao_atual == 3) {
-                
-            }
-            if (questao_atual == 4) {
-                
-            }
-            if (questao_atual == 5) {
-                
-            }
-        }
-    }
-    if (materia_atual == 2) {
-        if (conteudo_atual == 1) {
-            if (questao_atual == 1) {
-
-            }
-            if (questao_atual == 2) {
-                
-            }
-            if (questao_atual == 3) {
-                
-            }
-            if (questao_atual == 4) {
-                
-            }
-            if (questao_atual == 5) {
-                
-            }
-        }
-        if (conteudo_atual == 2) {
-
-        }
-    }
-    if (materia_atual == 3) {
-        if (conteudo_atual == 1) {
-            if (questao_atual == 1) {
-
-            }
-            if (questao_atual == 2) {
-                
-            }
-            if (questao_atual == 3) {
-                
-            }
-            if (questao_atual == 4) {
-                
-            }
-            if (questao_atual == 5) {
-                
-            }
-        }
-    }
-}
-function respondido_alternativa_4() {
-    var resposta_4 = alternativa_4.innerText || alternativa_3.textContent;
-    if (materia_atual == 1) {
-        if (conteudo_atual == 1) {
-            if (questao_atual == 1) {
-
-            }
-            if (questao_atual == 2) {
-                
-            }
-            if (questao_atual == 3) {
-                
-            }
-            if (questao_atual == 4) {
-                
-            }
-            if (questao_atual == 5) {
-                
-            }
-        }
-        if (conteudo_atual == 2) {
-            if (questao_atual == 1) {
-
-            }
-            if (questao_atual == 2) {
-                
-            }
-            if (questao_atual == 3) {
-                
-            }
-            if (questao_atual == 4) {
-                
-            }
-            if (questao_atual == 5) {
-                
-            }
-        }
-    }
-    if (materia_atual == 2) {
-        if (conteudo_atual == 1) {
-            if (questao_atual == 1) {
-
-            }
-            if (questao_atual == 2) {
-                
-            }
-            if (questao_atual == 3) {
-                
-            }
-            if (questao_atual == 4) {
-                
-            }
-            if (questao_atual == 5) {
-                
-            }
-        }
-        if (conteudo_atual == 2) {
-            if (questao_atual == 1) {
-
-            }
-            if (questao_atual == 2) {
-                
-            }
-            if (questao_atual == 3) {
-                
-            }
-            if (questao_atual == 4) {
-                
-            }
-            if (questao_atual == 5) {
-                
-            }
-        }
-    }
-    if (materia_atual == 3) {
-        if (conteudo_atual == 1) {
-            if (questao_atual == 1) {
-
-            }
-            if (questao_atual == 2) {
-                
-            }
-            if (questao_atual == 3) {
-                
-            }
-            if (questao_atual == 4) {
-                
-            }
-            if (questao_atual == 5) {
-                
-            }
-        }
-    }
-}
-function respondido_alternativa_5() {
-    var resposta_5 = alternativa_5.innerText || alternativa_5.textContent;
-    if (materia_atual == 1) {
-        if (conteudo_atual == 1) {
-            if (questao_atual == 1) {
-
-            }
-            if (questao_atual == 2) {
-                
-            }
-            if (questao_atual == 3) {
-                
-            }
-            if (questao_atual == 4) {
-                
-            }
-            if (questao_atual == 5) {
-                
-            }
-        }
-        if (conteudo_atual == 2) {
-            if (questao_atual == 1) {
-
-            }
-            if (questao_atual == 2) {
-                
-            }
-            if (questao_atual == 3) {
-                
-            }
-            if (questao_atual == 4) {
-                
-            }
-            if (questao_atual == 5) {
-                
-            }
-        }
-    }
-    if (materia_atual == 2) {
-        if (conteudo_atual == 1) {
-            if (questao_atual == 1) {
-
-            }
-            if (questao_atual == 2) {
-                
-            }
-            if (questao_atual == 3) {
-                
-            }
-            if (questao_atual == 4) {
-                
-            }
-            if (questao_atual == 5) {
-                
-            }
-        }
-        if (conteudo_atual == 2) {
-            if (questao_atual == 1) {
-
-            }
-            if (questao_atual == 2) {
-                
-            }
-            if (questao_atual == 3) {
-                
-            }
-            if (questao_atual == 4) {
-                
-            }
-            if (questao_atual == 5) {
-                
-            }
-        }
-    }
-    /* ~~~~~~~~~~~~~~~~ PORTUGUES ~~~~~~~~~~~~~~~*/
-    if (materia_atual == 3) {
-        /* ~~~~~~~~~~~~~~~~ ORAÇÕES ~~~~~~~~~~~~~~~*/
-        if (conteudo_atual == 1) {
-            if (questao_atual == 1) {
-
-            }
-            if (questao_atual == 2) {
-                
-            }
-            if (questao_atual == 3) {
-                
-            }
-            if (questao_atual == 4) {
-                
-            }
-            if (questao_atual == 5) {
-                
-            }
-        }
-    }
-}
 
 let creditos = document.getElementById("creditos")
