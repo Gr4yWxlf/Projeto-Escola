@@ -25,6 +25,24 @@ let respotas_quimica_estequiometria_questao_3 = ["11 g", "22 g", "44 g", "55 g",
 let respotas_quimica_estequiometria_questao_4 = ["1,8 g", "3,6 g", "6,0 g", "9,0 g", "18,0 g"]
 let respotas_quimica_estequiometria_questao_5 = ["11,2 L", "22,4 L", "33,6 L", "44,8 L", "56,0 L"]
 
+let respotas_quimica_balanceamento_questao_1 = ["Princípio da conservação da energia", "Princípio da incerteza de Heisenberg", "Princípio da conservação da massa", "Princípio da exclusão de Pauli", "Princípio de Le Chatelier"]
+let respotas_quimica_balanceamento_questao_2 = ["1", "2", "0,5", "3", "4"]
+let respotas_quimica_balanceamento_questao_3 = ["2, 1, 1", "4, 3, 2", "1, 2, 1", "3, 2, 3", "3, 1, 2"]
+let respotas_quimica_balanceamento_questao_4 = ["1, 4, 3, 3", "2, 6, 6, 8", "1, 5, 3, 4", "1, 3, 4, 2", "1, 7, 3, 4"]
+let respotas_quimica_balanceamento_questao_5 = ["4", "6", "2", "3", "5"]
+
+let respotas_quimica_materia_questao_1 = ["", "", "", "", ""]
+let respotas_quimica_materia_questao_2 = ["", "", "", "", ""]
+let respotas_quimica_materia_questao_3 = ["", "", "", "", ""]
+let respotas_quimica_materia_questao_4 = ["", "", "", "", ""]
+let respotas_quimica_materia_questao_5 = ["", "", "", "", ""]
+
+let respotas_quimica_modelosatomicos_questao_1 = ["", "", "", "", ""]
+let respotas_quimica_modelosatomicos_questao_2 = ["", "", "", "", ""]
+let respotas_quimica_modelosatomicos_questao_3 = ["", "", "", "", ""]
+let respotas_quimica_modelosatomicos_questao_4 = ["", "", "", "", ""]
+let respotas_quimica_modelosatomicos_questao_5 = ["", "", "", "", ""]
+
 /* Português */
 let respotas_portugues_oracoesfraseseperiodo_questao_1 = ["Um conjunto de palavras com sujeito e predicado.", "Qualquer enunciado que expressa sentido completo, com ou sem verbo.", "Um enunciado que sempre contém verbo.", "Um período composto por orações coordenadas.", "Todas as alternativas"]
 let respotas_portugues_oracoesfraseseperiodo_questao_2 = ['"Que dia bonito!"', '"Vamos para a festa."', '"Silêncio na sala."', '"Boa sorte!"', "Nenhumas das alternativas está correta."]
@@ -43,8 +61,18 @@ let linha_2 = document.getElementById("linha_2")
 let conteudo_1 = document.getElementById("conteudo_1")
 let conteudo_2 = document.getElementById("conteudo_2")
 let conteudo_3 = document.getElementById("conteudo_3")
+let conteudo_4 = document.getElementById("conteudo_4")
+let conteudo_5 = document.getElementById("conteudo_5")
+let conteudo_6 = document.getElementById("conteudo_6")
 conteudo_1.addEventListener("click", conteudo_1_click)
 conteudo_2.addEventListener("click", conteudo_2_click)
+conteudo_3.addEventListener("click", conteudo_3_click)
+
+/*
+conteudo_4.addEventListener("click", conteudo_4_click)
+conteudo_5.addEventListener("click", conteudo_5_click)
+conteudo_6.addEventListener("click", conteudo_6_click)
+*/
 
 
 /* area para rodar video ou texto e para separar as questões ====================================================================================*/
@@ -109,6 +137,9 @@ function selecionado_fisica_materia() {
     conteudo_2.style.width = `20em`
     conteudo_2.style.height = `2em`
     conteudo_2.innerText = `Cinemática`
+    conteudo_3.style.width = `0em`
+    conteudo_3.style.height = `0em`
+    conteudo_3.innerText = ``
 }
 function selecionado_quimica_materia() {
     materia_atual = 2
@@ -123,6 +154,7 @@ function selecionado_quimica_materia() {
 
     conteudo_1.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_2.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_3.style.backgroundColor = `rgb(255, 255, 255)`
 
     questao_1.style.backgroundColor = `rgb(255, 255, 255)`
     questao_2.style.backgroundColor = `rgb(255, 255, 255)`
@@ -136,6 +168,9 @@ function selecionado_quimica_materia() {
     conteudo_2.style.width = `20em`
     conteudo_2.style.height = `2em`
     conteudo_2.innerText = `Estequiometria`
+    conteudo_3.style.width = `20em`
+    conteudo_3.style.height = `2em`
+    conteudo_3.innerText = `Balanceamento Químico`
 }
 function selecionado_portugues_materia() {
     materia_atual = 3
@@ -163,12 +198,16 @@ function selecionado_portugues_materia() {
     conteudo_2.style.width = `0em`
     conteudo_2.style.height = `0em`
     conteudo_2.innerText = ``
+    conteudo_3.style.width = `0em`
+    conteudo_3.style.height = `0em`
+    conteudo_3.innerText = ``
 }
 
 /* Funções ao selecionar um dos conteudos ===================================================================================================*/
 function conteudo_1_click() {
     conteudo_1.style.backgroundColor = `rgb(120, 120, 120)`
     conteudo_2.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_3.style.backgroundColor = `rgb(255, 255, 255)`
     
     questao_1.style.backgroundColor = `rgb(255, 255, 255)`
     questao_2.style.backgroundColor = `rgb(255, 255, 255)`
@@ -263,6 +302,7 @@ function conteudo_1_click() {
 function conteudo_2_click() {
     conteudo_1.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_2.style.backgroundColor = `rgb(120, 120, 120)`
+    conteudo_3.style.backgroundColor = `rgb(255, 255, 255)`
 
     questao_1.style.backgroundColor = `rgb(255, 255, 255)`
     questao_2.style.backgroundColor = `rgb(255, 255, 255)`
@@ -306,6 +346,102 @@ function conteudo_2_click() {
         linha_2.style.height = `0.25em`;
 
         video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/deBaO49N1H8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        
+        area_questoes.style.width = `30%`;
+        area_questoes.style.height = `35vw`;
+        
+        questao_1.innerText = `Questão - 1`;
+        questao_2.innerText = `Questão - 2`;
+        questao_3.innerText = `Questão - 3`;
+        questao_4.innerText = `Questão - 4`;
+        questao_5.innerText = `Questão - 5`;
+        
+        alternativas_area.style.width = `0%`;
+        alternativas_area.style.height = `0em`;
+        
+        alternativa_1.innerText = ``;
+        alternativa_2.innerText = ``;
+        alternativa_3.innerText = ``;
+        alternativa_4.innerText = ``;
+        alternativa_5.innerText = ``;
+    }
+}
+function conteudo_3_click() {
+    conteudo_1.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_2.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_3.style.backgroundColor = `rgb(120, 120, 120)`
+
+    
+    questao_1.style.backgroundColor = `rgb(255, 255, 255)`
+    questao_2.style.backgroundColor = `rgb(255, 255, 255)`
+    questao_3.style.backgroundColor = `rgb(255, 255, 255)`
+    questao_4.style.backgroundColor = `rgb(255, 255, 255)`
+    questao_5.style.backgroundColor = `rgb(255, 255, 255)`
+    if (materia_atual == 1) {
+        conteudo_atual = 3
+
+        creditos.style.marginTop = `5%`;
+
+        linha_2.style.width = `90%`;
+        linha_2.style.height = `0.25em`;
+
+        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        
+        area_questoes.style.width = `30%`;
+        area_questoes.style.height = `35vw`;
+
+        questao_1.innerText = `Questão - 1`;
+        questao_2.innerText = `Questão - 2`;
+        questao_3.innerText = `Questão - 3`;
+        questao_4.innerText = `Questão - 4`;
+        questao_5.innerText = `Questão - 5`;
+
+        alternativas_area.style.width = `0%`;
+        alternativas_area.style.height = `0em`;
+
+        alternativa_1.innerText = ``;
+        alternativa_2.innerText = ``;
+        alternativa_3.innerText = ``;
+        alternativa_4.innerText = ``;
+        alternativa_5.innerText = ``;
+    }
+    if (materia_atual == 2) {
+        conteudo_atual = 3;
+
+        creditos.style.marginTop = `5%`;
+
+        linha_2.style.width = `90%`;
+        linha_2.style.height = `0.25em`;
+
+        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/yF8o5vTOGc4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        
+        area_questoes.style.width = `30%`;
+        area_questoes.style.height = `35vw`;
+        
+        questao_1.innerText = `Questão - 1`;
+        questao_2.innerText = `Questão - 2`;
+        questao_3.innerText = `Questão - 3`;
+        questao_4.innerText = `Questão - 4`;
+        questao_5.innerText = `Questão - 5`;
+        
+        alternativas_area.style.width = `0%`;
+        alternativas_area.style.height = `0em`;
+        
+        alternativa_1.innerText = ``;
+        alternativa_2.innerText = ``;
+        alternativa_3.innerText = ``;
+        alternativa_4.innerText = ``;
+        alternativa_5.innerText = ``;
+    }
+    if (materia_atual == 3) {
+        conteudo_atual = 3;
+
+        creditos.style.marginTop = `5%`;
+        
+        linha_2.style.width = `90%`;
+        linha_2.style.height = `0.25em`;
+        
+        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
         
         area_questoes.style.width = `30%`;
         area_questoes.style.height = `35vw`;
@@ -388,6 +524,16 @@ function questao_1_click() {
             alternativa_4.innerText = `D) ${respotas_quimica_estequiometria_questao_1[3]}`
             alternativa_5.innerText = `E) ${respotas_quimica_estequiometria_questao_1[4]}`
         }
+        if (conteudo_atual == 3) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Qual é o princípio fundamental utilizado no balanceamento de equações químicas?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_quimica_balanceamento_questao_1[0]}`
+            alternativa_2.innerText = `B) ${respotas_quimica_balanceamento_questao_1[1]}`
+            alternativa_3.innerText = `C) ${respotas_quimica_balanceamento_questao_1[2]}`
+            alternativa_4.innerText = `D) ${respotas_quimica_balanceamento_questao_1[3]}`
+            alternativa_5.innerText = `E) ${respotas_quimica_balanceamento_questao_1[4]}`
+        }
     }
     if (materia_atual == 3) {
         /* ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ PORTUGUES ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ */
@@ -462,6 +608,16 @@ function questao_2_click() {
             alternativa_3.innerText = `C) ${respotas_quimica_estequiometria_questao_2[2]}`
             alternativa_4.innerText = `D) ${respotas_quimica_estequiometria_questao_2[3]}`
             alternativa_5.innerText = `E) ${respotas_quimica_estequiometria_questao_2[4]}`
+        }
+        if (conteudo_atual == 3) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Ao balancear a equação H2+O2→H2OH2​+O2​→H2​O, qual é o coeficiente estequiométrico correto para a molécula de O2O2​?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_quimica_balanceamento_questao_2[0]}`
+            alternativa_2.innerText = `B) ${respotas_quimica_balanceamento_questao_2[1]}`
+            alternativa_3.innerText = `C) ${respotas_quimica_balanceamento_questao_2[2]}`
+            alternativa_4.innerText = `D) ${respotas_quimica_balanceamento_questao_2[3]}`
+            alternativa_5.innerText = `E) ${respotas_quimica_balanceamento_questao_2[4]}`
         }
     }
     if (materia_atual == 3) {
@@ -538,6 +694,16 @@ function questao_3_click() {
             alternativa_4.innerText = `D) ${respotas_quimica_estequiometria_questao_3[3]}`
             alternativa_5.innerText = `E) ${respotas_quimica_estequiometria_questao_3[4]}`
         }
+        if (conteudo_atual == 3) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Considere a equação não balanceada: Fe+O2→Fe2O3Fe+O2​→Fe2​O3​. Qual dos seguintes conjuntos de coeficientes balanceia corretamente essa reação?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_quimica_balanceamento_questao_3[0]}`
+            alternativa_2.innerText = `B) ${respotas_quimica_balanceamento_questao_3[1]}`
+            alternativa_3.innerText = `C) ${respotas_quimica_balanceamento_questao_3[2]}`
+            alternativa_4.innerText = `D) ${respotas_quimica_balanceamento_questao_3[3]}`
+            alternativa_5.innerText = `E) ${respotas_quimica_balanceamento_questao_3[4]}`
+        }
     }
     if (materia_atual == 3) {
         /* ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ PORTUGUES ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ */
@@ -612,6 +778,16 @@ function questao_4_click() {
             alternativa_3.innerText = `C) ${respotas_quimica_estequiometria_questao_4[2]}`
             alternativa_4.innerText = `D) ${respotas_quimica_estequiometria_questao_4[3]}`
             alternativa_5.innerText = `E) ${respotas_quimica_estequiometria_questao_4[4]}`
+        }
+        if (conteudo_atual == 3) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Ao balancear a equação C3H8+O2→CO2+H2OC3​H8​+O2​→CO2​+H2​O, quais são os coeficientes corretos na ordem de C3H8C3​H8​, O2O2​, CO2CO2​, H2OH2​O?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_quimica_balanceamento_questao_4[0]}`
+            alternativa_2.innerText = `B) ${respotas_quimica_balanceamento_questao_4[1]}`
+            alternativa_3.innerText = `C) ${respotas_quimica_balanceamento_questao_4[2]}`
+            alternativa_4.innerText = `D) ${respotas_quimica_balanceamento_questao_4[3]}`
+            alternativa_5.innerText = `E) ${respotas_quimica_balanceamento_questao_4[4]}`
         }
     }
     if (materia_atual == 3) {
@@ -688,6 +864,16 @@ function questao_5_click() {
             alternativa_4.innerText = `D) ${respotas_quimica_estequiometria_questao_5[3]}`
             alternativa_5.innerText = `E) ${respotas_quimica_estequiometria_questao_5[4]}`
         }
+        if (conteudo_atual == 3) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Qual é a quantidade de átomos de oxigênio no lado direito da equação balanceada: C2H4+O2→CO2+H2OC2​H4​+O2​→CO2​+H2​O?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_quimica_balanceamento_questao_5[0]}`
+            alternativa_2.innerText = `B) ${respotas_quimica_balanceamento_questao_5[1]}`
+            alternativa_3.innerText = `C) ${respotas_quimica_balanceamento_questao_5[2]}`
+            alternativa_4.innerText = `D) ${respotas_quimica_balanceamento_questao_5[3]}`
+            alternativa_5.innerText = `E) ${respotas_quimica_balanceamento_questao_5[4]}`
+        }
     }
     if (materia_atual == 3) {
         /* ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ PORTUGUES ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ */
@@ -741,11 +927,7 @@ function respondido_alternativa() {
         if (conteudo_atual == 1) {
             if (questao_atual == 1) {
                 if (alternativa_selecionada == 2) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
 
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -763,11 +945,7 @@ function respondido_alternativa() {
             }
             if (questao_atual == 2) {
                 if (alternativa_selecionada == 3) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -784,11 +962,7 @@ function respondido_alternativa() {
             }
             if (questao_atual == 3) {
                 if (alternativa_selecionada == 3) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -805,10 +979,6 @@ function respondido_alternativa() {
             }
             if (questao_atual == 4) {
                 if (alternativa_selecionada == 5) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_5.style.backgroundColor = `rgb(0, 128, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
@@ -827,10 +997,6 @@ function respondido_alternativa() {
             if (questao_atual == 5) {
                 if (alternativa_selecionada == 1) {
                     alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -850,11 +1016,7 @@ function respondido_alternativa() {
         if (conteudo_atual == 2) {
             if (questao_atual == 1) {
                 if (alternativa_selecionada == 3) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -871,11 +1033,7 @@ function respondido_alternativa() {
             }
             if (questao_atual == 2) {
                 if (alternativa_selecionada == 2) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
 
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -892,11 +1050,7 @@ function respondido_alternativa() {
             }
             if (questao_atual == 3) {
                 if (alternativa_selecionada == 3) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -913,11 +1067,7 @@ function respondido_alternativa() {
             }
             if (questao_atual == 4) {
                 if (alternativa_selecionada == 3) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -934,11 +1084,7 @@ function respondido_alternativa() {
             }
             if (questao_atual == 5) {
                 if (alternativa_selecionada == 2) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -961,11 +1107,7 @@ function respondido_alternativa() {
         if (conteudo_atual == 1) {
             if (questao_atual == 1) {
                 if (alternativa_selecionada == 4) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_4.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
 
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -983,10 +1125,6 @@ function respondido_alternativa() {
             if (questao_atual == 2) {
                 if (alternativa_selecionada == 1) {
                     alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -1004,10 +1142,6 @@ function respondido_alternativa() {
             if (questao_atual == 3) {
                 if (alternativa_selecionada == 1) {
                     alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -1025,10 +1159,6 @@ function respondido_alternativa() {
             if (questao_atual == 4) {
                 if (alternativa_selecionada == 1) {
                     alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -1045,11 +1175,7 @@ function respondido_alternativa() {
             }
             if (questao_atual == 5) {
                 if (alternativa_selecionada == 2) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -1069,11 +1195,7 @@ function respondido_alternativa() {
         if (conteudo_atual == 2) {
             if (questao_atual == 1) {
                 if (alternativa_selecionada == 2) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -1090,11 +1212,7 @@ function respondido_alternativa() {
             }
             if (questao_atual == 2) {
                 if (alternativa_selecionada == 3) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -1111,11 +1229,7 @@ function respondido_alternativa() {
             }
             if (questao_atual == 3) {
                 if (alternativa_selecionada == 3) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -1132,11 +1246,7 @@ function respondido_alternativa() {
             }
             if (questao_atual == 4) {
                 if (alternativa_selecionada == 4) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_4.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
 
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -1153,11 +1263,7 @@ function respondido_alternativa() {
             }
             if (questao_atual == 5) {
                 if (alternativa_selecionada == 2) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -1172,7 +1278,95 @@ function respondido_alternativa() {
                     alternativa_certa_som.play()
                 }
             }
-        }   
+        }
+        /* ~~~~~~~~~~~~~~~~ BALANCEMENTO ~~~~~~~~~~~~~~~*/
+        if (conteudo_atual == 3) {
+            if (questao_atual == 1) {
+                if (alternativa_selecionada == 3) {
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+      
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
+            }
+            if (questao_atual == 2) {
+                if (alternativa_selecionada == 3) {
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                } 
+            }
+            if (questao_atual == 3) {
+                if (alternativa_selecionada == 2) {
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
+            }
+            if (questao_atual == 4) {
+                if (alternativa_selecionada == 3) {
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
+            }
+            if (questao_atual == 5) {
+                if (alternativa_selecionada == 2) {
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
+            }
+        }     
     }
     /* ~~~~~~~~~~~~~~~~ PORTUGUES ~~~~~~~~~~~~~~~*/
     if (materia_atual == 3) {
@@ -1180,11 +1374,7 @@ function respondido_alternativa() {
         if (conteudo_atual == 1) {
             if (questao_atual == 1) {
                 if (alternativa_selecionada == 2) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -1201,11 +1391,7 @@ function respondido_alternativa() {
             }
             if (questao_atual == 2) {
                 if (alternativa_selecionada == 2) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -1222,11 +1408,7 @@ function respondido_alternativa() {
             }
             if (questao_atual == 3) {
                 if (alternativa_selecionada == 2) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -1243,11 +1425,7 @@ function respondido_alternativa() {
             }
             if (questao_atual == 4) {
                 if (alternativa_selecionada == 2) {
-                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()
@@ -1265,10 +1443,6 @@ function respondido_alternativa() {
             if (questao_atual == 5) {
                 if (alternativa_selecionada == 1) {
                     alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
-                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
-                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
                     
                     var alternativa_certa_som = new Audio('audios/acerto.mp3')
                     alternativa_certa_som.play()

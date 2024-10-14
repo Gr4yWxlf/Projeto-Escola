@@ -70,7 +70,7 @@ body {
 }
 
 /* Selecionar o conteudo para a materia */
-#conteudo_1, #conteudo_2, #conteudo_3 {
+#conteudo_1, #conteudo_2, #conteudo_3, #conteudo_4, #conteudo_5, #conteudo_6 {
     cursor: pointer;
     font: bold 125% arial;
     width: 0%;
