@@ -213,7 +213,7 @@ function selecionado_portugues_materia() {
 
     conteudo_1.style.width = `20em`
     conteudo_1.style.height = `2em`
-    conteudo_1.innerText = `Orações, Frases e Periodo`
+    conteudo_1.innerText = `Orações, Frases e Período`
     conteudo_2.style.width = `20em`
     conteudo_2.style.height = `2em`
     conteudo_2.innerText = `"Sentido Figurado"`
