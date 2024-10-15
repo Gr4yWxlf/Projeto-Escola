@@ -189,7 +189,7 @@ function selecionado_quimica_materia() {
     conteudo_4.innerText = `Matéria`
     conteudo_5.style.width = `20em`
     conteudo_5.style.height = `2em`
-    conteudo_5.innerText = `Modelos Atómicos`
+    conteudo_5.innerText = `Modelos Atômicos`
 }
 function selecionado_portugues_materia() {
     materia_atual = 3
