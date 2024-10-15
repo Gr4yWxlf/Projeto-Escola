@@ -50,6 +50,12 @@ let respotas_portugues_oracoesfraseseperiodo_questao_3 = ["A presença de mais d
 let respotas_portugues_oracoesfraseseperiodo_questao_4 = ['"Choveu durante a tarde."', '"Fui ao cinema e depois jantei com meus amigos."', '"Silêncio na biblioteca."', '"Caminhei até o parque."', "Nenhuma das anteriores."]
 let respotas_portugues_oracoesfraseseperiodo_questao_5 = ['"Comprei um livro porque adoro ler."', '"O sol brilha no horizonte."', '"Ele acordou cedo e saiu para trabalhar."', '"João e Maria foram ao parque."', "Somente a I e III"]
 
+let respotas_portugues_sentidofigurado_questao_1 = ['Ela tem um coração de ouro.', 'Meu coração acelerou de felicidade.', 'O coração do problema está na comunicação.', 'O médico disse que meu coração está saudável.', 'Ele é o coração da empresa.']
+let respotas_portugues_sentidofigurado_questao_2 = ['A água estava fria na piscina.', 'A comida esfriou enquanto você conversava.', 'Ele me deu uma resposta fria, sem emoção.', 'Hoje o dia está muito frio.', 'Ela se sentiu fria por causa da febre.']
+let respotas_portugues_sentidofigurado_questao_3 = ['Comi um peixe delicioso no jantar.', 'O peixe estava fresco no mercado hoje.', 'Ele é um peixe grande na política local.', 'Meu pai pegou um peixe enorme no rio.', 'O aquário tem muitos peixes coloridos.']
+let respotas_portugues_sentidofigurado_questao_4 = ['Ela é muito “raiz”, prefere as coisas simples.', 'Esse problema tem suas raízes na infância.', 'A raiz da árvore está exposta.', 'O racismo é a raiz de muitos problemas sociais.', 'A raiz do cabelo dela é escura.']
+let respotas_portugues_sentidofigurado_questao_5 = ['A luz do quarto estava apagada.', 'Ele foi a luz que iluminou minha vida.', 'A luz do sol estava forte pela manhã.', 'Faltou luz na casa durante a tempestade.', 'Preciso de luz para conseguir enxergar melhor.']
+
 /* editar texto para alterar o nome da materia selecionada =======================================================================================*/
 let materia_selecionada = document.getElementById("materia_selecionada")
 
@@ -208,9 +214,9 @@ function selecionado_portugues_materia() {
     conteudo_1.style.width = `20em`
     conteudo_1.style.height = `2em`
     conteudo_1.innerText = `Orações, Frases e Periodo`
-    conteudo_2.style.width = `0em`
-    conteudo_2.style.height = `0em`
-    conteudo_2.innerText = ``
+    conteudo_2.style.width = `20em`
+    conteudo_2.style.height = `2em`
+    conteudo_2.innerText = `"Sentido Figurado"`
     conteudo_3.style.width = `0em`
     conteudo_3.style.height = `0em`
     conteudo_3.innerText = ``
@@ -369,6 +375,34 @@ function conteudo_2_click() {
         linha_2.style.height = `0.25em`;
 
         video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/deBaO49N1H8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        
+        area_questoes.style.width = `30%`;
+        area_questoes.style.height = `35vw`;
+        
+        questao_1.innerText = `Questão - 1`;
+        questao_2.innerText = `Questão - 2`;
+        questao_3.innerText = `Questão - 3`;
+        questao_4.innerText = `Questão - 4`;
+        questao_5.innerText = `Questão - 5`;
+        
+        alternativas_area.style.width = `0%`;
+        alternativas_area.style.height = `0em`;
+        
+        alternativa_1.innerText = ``;
+        alternativa_2.innerText = ``;
+        alternativa_3.innerText = ``;
+        alternativa_4.innerText = ``;
+        alternativa_5.innerText = ``;
+    }
+    if (materia_atual == 3) {
+        conteudo_atual = 2;
+
+        creditos.style.marginTop = `5%`;
+
+        linha_2.style.width = `90%`;
+        linha_2.style.height = `0.25em`;
+
+        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/M2H35DwkR6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
         
         area_questoes.style.width = `30%`;
         area_questoes.style.height = `35vw`;
@@ -786,6 +820,16 @@ function questao_1_click() {
             alternativa_4.innerText = `D) ${respotas_portugues_oracoesfraseseperiodo_questao_1[3]}`
             alternativa_5.innerText = `E) ${respotas_portugues_oracoesfraseseperiodo_questao_1[4]}`
         }
+        if (conteudo_atual == 2) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Em qual das alternativas a palavra “coração” está sendo usada em sentido denotativo?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_sentidofigurado_questao_1[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_sentidofigurado_questao_1[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_sentidofigurado_questao_1[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_sentidofigurado_questao_1[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_sentidofigurado_questao_1[4]}`
+        }
     }
 }
 /* ====================================================== QUESTÃO 2 ====================================================== */
@@ -890,6 +934,16 @@ function questao_2_click() {
             alternativa_3.innerText = `C) ${respotas_portugues_oracoesfraseseperiodo_questao_2[2]}`
             alternativa_4.innerText = `D) ${respotas_portugues_oracoesfraseseperiodo_questao_2[3]}`
             alternativa_5.innerText = `E) ${respotas_portugues_oracoesfraseseperiodo_questao_2[4]}`
+        }
+        if (conteudo_atual == 2) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">A palavra "fria" foi utilizada em sentido conotativo em qual alternativa?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_sentidofigurado_questao_2[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_sentidofigurado_questao_2[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_sentidofigurado_questao_2[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_sentidofigurado_questao_2[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_sentidofigurado_questao_2[4]}`
         }
     }
 }
@@ -996,6 +1050,16 @@ function questao_3_click() {
             alternativa_4.innerText = `D) ${respotas_portugues_oracoesfraseseperiodo_questao_3[3]}`
             alternativa_5.innerText = `E) ${respotas_portugues_oracoesfraseseperiodo_questao_3[4]}`
         }
+        if (conteudo_atual == 2) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Em qual das frases a palavra “peixe” está em sentido conotativo?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_sentidofigurado_questao_3[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_sentidofigurado_questao_3[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_sentidofigurado_questao_3[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_sentidofigurado_questao_3[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_sentidofigurado_questao_3[4]}`
+        }
     }
 }
 /* ====================================================== QUESTÃO 4 ====================================================== */
@@ -1101,6 +1165,16 @@ function questao_4_click() {
             alternativa_4.innerText = `D) ${respotas_portugues_oracoesfraseseperiodo_questao_4[3]}`
             alternativa_5.innerText = `E) ${respotas_portugues_oracoesfraseseperiodo_questao_4[4]}`
         }
+        if (conteudo_atual == 2) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Em qual das alternativas a palavra “raiz” foi empregada em sentido denotativo?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_sentidofigurado_questao_4[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_sentidofigurado_questao_4[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_sentidofigurado_questao_4[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_sentidofigurado_questao_4[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_sentidofigurado_questao_4[4]}`
+        }
     }
 }
 /* ====================================================== QUESTÃO 5 ====================================================== */
@@ -1205,6 +1279,16 @@ function questao_5_click() {
             alternativa_3.innerText = `C) ${respotas_portugues_oracoesfraseseperiodo_questao_5[2]}`
             alternativa_4.innerText = `D) ${respotas_portugues_oracoesfraseseperiodo_questao_5[3]}`
             alternativa_5.innerText = `E) ${respotas_portugues_oracoesfraseseperiodo_questao_5[4]}`
+        }
+        if (conteudo_atual == 2) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">A palavra "luz" foi usada em sentido conotativo em qual alternativa?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_sentidofigurado_questao_5[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_sentidofigurado_questao_5[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_sentidofigurado_questao_5[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_sentidofigurado_questao_5[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_sentidofigurado_questao_5[4]}`
         }
     }
 }
@@ -1944,6 +2028,94 @@ function respondido_alternativa() {
                 } else {
                     alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
                     alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
+            }
+        }
+        /* ~~~~~~~~~~~~~~~~ SENTIDO FIGURADO ~~~~~~~~~~~~~~~*/
+        if (conteudo_atual == 2) {
+            if (questao_atual == 1) {
+                if (alternativa_selecionada == 4) {
+                    alternativa_4.style.backgroundColor = `rgb(0, 128, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
+            }
+            if (questao_atual == 2) {
+                if (alternativa_selecionada == 3) {
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
+            }
+            if (questao_atual == 3) {
+                if (alternativa_selecionada == 3) {
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
+            }
+            if (questao_atual == 4) {
+                if (alternativa_selecionada == 3) {
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
+            }
+            if (questao_atual == 5) {
+                if (alternativa_selecionada == 2) {
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
                     alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
                     alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
