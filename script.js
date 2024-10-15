@@ -31,17 +31,17 @@ let respotas_quimica_balanceamento_questao_3 = ["2, 1, 1", "4, 3, 2", "1, 2, 1",
 let respotas_quimica_balanceamento_questao_4 = ["1, 4, 3, 3", "2, 6, 6, 8", "1, 5, 3, 4", "1, 3, 4, 2", "1, 7, 3, 4"]
 let respotas_quimica_balanceamento_questao_5 = ["4", "6", "2", "3", "5"]
 
-let respotas_quimica_materia_questao_1 = ["", "", "", "", ""]
-let respotas_quimica_materia_questao_2 = ["", "", "", "", ""]
-let respotas_quimica_materia_questao_3 = ["", "", "", "", ""]
-let respotas_quimica_materia_questao_4 = ["", "", "", "", ""]
-let respotas_quimica_materia_questao_5 = ["", "", "", "", ""]
+let respotas_quimica_materia_questao_1 = ["Massa específica", "Temperatura de fusão", "Peso", "Volume", "Cor"]
+let respotas_quimica_materia_questao_2 = ["Ar", "Água destilada", "Sal de cozinha (NaCl) dissolvido em água", "Areia", "Vinagre"]
+let respotas_quimica_materia_questao_3 = ["Quantidade de espaço ocupado pela matéria.", "Relação entre a massa e o volume de uma substância.", "Capacidade de uma substância de se misturar com outra.", "Quantidade total de matéria em um corpo.", "Força com que a gravidade atrai um corpo para o centro da Terra."]
+let respotas_quimica_materia_questao_4 = ["Sublimação", "Vaporização", "Fusão", "Condensação", "Liquefação"]
+let respotas_quimica_materia_questao_5 = ["Substância que não pode ser decomposta em outras mais simples.", "Mistura homogênea de várias substâncias.", "Composto formado por diferentes tipos de átomos.", "Agregado de moléculas que formam uma substância pura.", "Substância que possui uma única molécula."]
 
-let respotas_quimica_modelosatomicos_questao_1 = ["", "", "", "", ""]
-let respotas_quimica_modelosatomicos_questao_2 = ["", "", "", "", ""]
-let respotas_quimica_modelosatomicos_questao_3 = ["", "", "", "", ""]
-let respotas_quimica_modelosatomicos_questao_4 = ["", "", "", "", ""]
-let respotas_quimica_modelosatomicos_questao_5 = ["", "", "", "", ""]
+let respotas_quimica_modelosatomicos_questao_1 = ["Modelo de Rutherford", "Modelo de Bohr", "Modelo de Dalton", "Modelo de Thomson", "Modelo de Schrödinger"]
+let respotas_quimica_modelosatomicos_questao_2 = ["Uma esfera maciça e indivisível.", "Uma massa de carga positiva com elétrons incrustados.", "Um núcleo pequeno e denso, com carga positiva, rodeado por elétrons em órbitas.", "Um sistema planetário com órbitas circulares para os elétrons.", "Uma nuvem de probabilidades eletrônicas ao redor do núcleo."]
+let respotas_quimica_modelosatomicos_questao_3 = ["Um núcleo de prótons e nêutrons rodeado por elétrons.", "Uma esfera homogênea e positiva, com elétrons incrustados.", "Um núcleo denso com elétrons em camadas de energia definidas.", "Uma estrutura de ondas de probabilidades para os elétrons.", "Uma esfera dividida em prótons e nêutrons."]
+let respotas_quimica_modelosatomicos_questao_4 = ["Descoberta do núcleo atômico.", "Proposição da indivisibilidade do átomo.", "Definição das órbitas circulares e quantizadas dos elétrons.", "Descrição da distribuição probabilística dos elétrons.", "Criação do conceito de elétrons como partículas sem órbitas definidas."]
+let respotas_quimica_modelosatomicos_questao_5 = ["Os átomos são indivisíveis e indestrutíveis.", "Os átomos possuem elétrons que se movem ao redor do núcleo.", "Os átomos de um mesmo elemento são diferentes entre si.", "O átomo é uma esfera de carga positiva com elétrons distribuídos.", "O átomo é formado por um núcleo e uma nuvem de probabilidades."]
 
 /* Português */
 let respotas_portugues_oracoesfraseseperiodo_questao_1 = ["Um conjunto de palavras com sujeito e predicado.", "Qualquer enunciado que expressa sentido completo, com ou sem verbo.", "Um enunciado que sempre contém verbo.", "Um período composto por orações coordenadas.", "Todas as alternativas"]
@@ -67,10 +67,10 @@ let conteudo_6 = document.getElementById("conteudo_6")
 conteudo_1.addEventListener("click", conteudo_1_click)
 conteudo_2.addEventListener("click", conteudo_2_click)
 conteudo_3.addEventListener("click", conteudo_3_click)
-
-/*
 conteudo_4.addEventListener("click", conteudo_4_click)
 conteudo_5.addEventListener("click", conteudo_5_click)
+
+/*
 conteudo_6.addEventListener("click", conteudo_6_click)
 */
 
@@ -140,6 +140,12 @@ function selecionado_fisica_materia() {
     conteudo_3.style.width = `0em`
     conteudo_3.style.height = `0em`
     conteudo_3.innerText = ``
+    conteudo_4.style.width = `0em`
+    conteudo_4.style.height = `0em`
+    conteudo_4.innerText = ``
+    conteudo_5.style.width = `0em`
+    conteudo_5.style.height = `0em`
+    conteudo_5.innerText = ``
 }
 function selecionado_quimica_materia() {
     materia_atual = 2
@@ -155,6 +161,7 @@ function selecionado_quimica_materia() {
     conteudo_1.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_2.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_3.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_4.style.backgroundColor = `rgb(255, 255, 255)`
 
     questao_1.style.backgroundColor = `rgb(255, 255, 255)`
     questao_2.style.backgroundColor = `rgb(255, 255, 255)`
@@ -171,6 +178,12 @@ function selecionado_quimica_materia() {
     conteudo_3.style.width = `20em`
     conteudo_3.style.height = `2em`
     conteudo_3.innerText = `Balanceamento Químico`
+    conteudo_4.style.width = `20em`
+    conteudo_4.style.height = `2em`
+    conteudo_4.innerText = `Matéria`
+    conteudo_5.style.width = `20em`
+    conteudo_5.style.height = `2em`
+    conteudo_5.innerText = `Modelos Atómicos`
 }
 function selecionado_portugues_materia() {
     materia_atual = 3
@@ -201,6 +214,12 @@ function selecionado_portugues_materia() {
     conteudo_3.style.width = `0em`
     conteudo_3.style.height = `0em`
     conteudo_3.innerText = ``
+    conteudo_4.style.width = `0em`
+    conteudo_4.style.height = `0em`
+    conteudo_4.innerText = ``
+    conteudo_5.style.width = `0em`
+    conteudo_5.style.height = `0em`
+    conteudo_5.innerText = ``
 }
 
 /* Funções ao selecionar um dos conteudos ===================================================================================================*/
@@ -208,6 +227,8 @@ function conteudo_1_click() {
     conteudo_1.style.backgroundColor = `rgb(120, 120, 120)`
     conteudo_2.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_3.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_4.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_5.style.backgroundColor = `rgb(255, 255, 255)`
     
     questao_1.style.backgroundColor = `rgb(255, 255, 255)`
     questao_2.style.backgroundColor = `rgb(255, 255, 255)`
@@ -303,6 +324,8 @@ function conteudo_2_click() {
     conteudo_1.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_2.style.backgroundColor = `rgb(120, 120, 120)`
     conteudo_3.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_4.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_5.style.backgroundColor = `rgb(255, 255, 255)`
 
     questao_1.style.backgroundColor = `rgb(255, 255, 255)`
     questao_2.style.backgroundColor = `rgb(255, 255, 255)`
@@ -370,6 +393,8 @@ function conteudo_3_click() {
     conteudo_1.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_2.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_3.style.backgroundColor = `rgb(120, 120, 120)`
+    conteudo_4.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_5.style.backgroundColor = `rgb(255, 255, 255)`
 
     
     questao_1.style.backgroundColor = `rgb(255, 255, 255)`
@@ -435,6 +460,200 @@ function conteudo_3_click() {
     }
     if (materia_atual == 3) {
         conteudo_atual = 3;
+
+        creditos.style.marginTop = `5%`;
+        
+        linha_2.style.width = `90%`;
+        linha_2.style.height = `0.25em`;
+        
+        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        
+        area_questoes.style.width = `30%`;
+        area_questoes.style.height = `35vw`;
+        
+        questao_1.innerText = `Questão - 1`;
+        questao_2.innerText = `Questão - 2`;
+        questao_3.innerText = `Questão - 3`;
+        questao_4.innerText = `Questão - 4`;
+        questao_5.innerText = `Questão - 5`;
+        
+        alternativas_area.style.width = `0%`;
+        alternativas_area.style.height = `0em`;
+        
+        alternativa_1.innerText = ``;
+        alternativa_2.innerText = ``;
+        alternativa_3.innerText = ``;
+        alternativa_4.innerText = ``;
+        alternativa_5.innerText = ``;
+    }
+}
+function conteudo_4_click() {
+    conteudo_1.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_2.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_3.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_4.style.backgroundColor = `rgb(120, 120, 120)`
+    conteudo_5.style.backgroundColor = `rgb(255, 255, 255)`
+    
+    questao_1.style.backgroundColor = `rgb(255, 255, 255)`
+    questao_2.style.backgroundColor = `rgb(255, 255, 255)`
+    questao_3.style.backgroundColor = `rgb(255, 255, 255)`
+    questao_4.style.backgroundColor = `rgb(255, 255, 255)`
+    questao_5.style.backgroundColor = `rgb(255, 255, 255)`
+    if (materia_atual == 1) {
+        conteudo_atual = 4;
+
+        creditos.style.marginTop = `5%`;
+
+        linha_2.style.width = `90%`;
+        linha_2.style.height = `0.25em`;
+
+        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        
+        area_questoes.style.width = `30%`;
+        area_questoes.style.height = `35vw`;
+
+        questao_1.innerText = `Questão - 1`;
+        questao_2.innerText = `Questão - 2`;
+        questao_3.innerText = `Questão - 3`;
+        questao_4.innerText = `Questão - 4`;
+        questao_5.innerText = `Questão - 5`;
+
+        alternativas_area.style.width = `0%`;
+        alternativas_area.style.height = `0em`;
+
+        alternativa_1.innerText = ``;
+        alternativa_2.innerText = ``;
+        alternativa_3.innerText = ``;
+        alternativa_4.innerText = ``;
+        alternativa_5.innerText = ``;
+    }
+    if (materia_atual == 2) {
+        conteudo_atual = 4;
+
+        creditos.style.marginTop = `5%`;
+
+        linha_2.style.width = `90%`;
+        linha_2.style.height = `0.25em`;
+
+        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/ANnkstfG6nE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        
+        area_questoes.style.width = `30%`;
+        area_questoes.style.height = `35vw`;
+        
+        questao_1.innerText = `Questão - 1`;
+        questao_2.innerText = `Questão - 2`;
+        questao_3.innerText = `Questão - 3`;
+        questao_4.innerText = `Questão - 4`;
+        questao_5.innerText = `Questão - 5`;
+        
+        alternativas_area.style.width = `0%`;
+        alternativas_area.style.height = `0em`;
+        
+        alternativa_1.innerText = ``;
+        alternativa_2.innerText = ``;
+        alternativa_3.innerText = ``;
+        alternativa_4.innerText = ``;
+        alternativa_5.innerText = ``;
+    }
+    if (materia_atual == 3) {
+        conteudo_atual = 4;
+
+        creditos.style.marginTop = `5%`;
+        
+        linha_2.style.width = `90%`;
+        linha_2.style.height = `0.25em`;
+        
+        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        
+        area_questoes.style.width = `30%`;
+        area_questoes.style.height = `35vw`;
+        
+        questao_1.innerText = `Questão - 1`;
+        questao_2.innerText = `Questão - 2`;
+        questao_3.innerText = `Questão - 3`;
+        questao_4.innerText = `Questão - 4`;
+        questao_5.innerText = `Questão - 5`;
+        
+        alternativas_area.style.width = `0%`;
+        alternativas_area.style.height = `0em`;
+        
+        alternativa_1.innerText = ``;
+        alternativa_2.innerText = ``;
+        alternativa_3.innerText = ``;
+        alternativa_4.innerText = ``;
+        alternativa_5.innerText = ``;
+    }
+}
+function conteudo_5_click() {
+    conteudo_1.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_2.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_3.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_4.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_5.style.backgroundColor = `rgb(120, 120, 120)`
+    
+    questao_1.style.backgroundColor = `rgb(255, 255, 255)`
+    questao_2.style.backgroundColor = `rgb(255, 255, 255)`
+    questao_3.style.backgroundColor = `rgb(255, 255, 255)`
+    questao_4.style.backgroundColor = `rgb(255, 255, 255)`
+    questao_5.style.backgroundColor = `rgb(255, 255, 255)`
+    if (materia_atual == 1) {
+        conteudo_atual = 5;
+
+        creditos.style.marginTop = `5%`;
+
+        linha_2.style.width = `90%`;
+        linha_2.style.height = `0.25em`;
+
+        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        
+        area_questoes.style.width = `30%`;
+        area_questoes.style.height = `35vw`;
+
+        questao_1.innerText = `Questão - 1`;
+        questao_2.innerText = `Questão - 2`;
+        questao_3.innerText = `Questão - 3`;
+        questao_4.innerText = `Questão - 4`;
+        questao_5.innerText = `Questão - 5`;
+
+        alternativas_area.style.width = `0%`;
+        alternativas_area.style.height = `0em`;
+
+        alternativa_1.innerText = ``;
+        alternativa_2.innerText = ``;
+        alternativa_3.innerText = ``;
+        alternativa_4.innerText = ``;
+        alternativa_5.innerText = ``;
+    }
+    if (materia_atual == 2) {
+        conteudo_atual = 5;
+
+        creditos.style.marginTop = `5%`;
+
+        linha_2.style.width = `90%`;
+        linha_2.style.height = `0.25em`;
+
+        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/dAFTFesEjKQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        
+        area_questoes.style.width = `30%`;
+        area_questoes.style.height = `35vw`;
+        
+        questao_1.innerText = `Questão - 1`;
+        questao_2.innerText = `Questão - 2`;
+        questao_3.innerText = `Questão - 3`;
+        questao_4.innerText = `Questão - 4`;
+        questao_5.innerText = `Questão - 5`;
+        
+        alternativas_area.style.width = `0%`;
+        alternativas_area.style.height = `0em`;
+        
+        alternativa_1.innerText = ``;
+        alternativa_2.innerText = ``;
+        alternativa_3.innerText = ``;
+        alternativa_4.innerText = ``;
+        alternativa_5.innerText = ``;
+    }
+    if (materia_atual == 3) {
+        conteudo_atual = 5;
 
         creditos.style.marginTop = `5%`;
         
@@ -534,6 +753,26 @@ function questao_1_click() {
             alternativa_4.innerText = `D) ${respotas_quimica_balanceamento_questao_1[3]}`
             alternativa_5.innerText = `E) ${respotas_quimica_balanceamento_questao_1[4]}`
         }
+        if (conteudo_atual == 4) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Qual das alternativas a seguir é considerada uma propriedade geral da matéria?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_quimica_materia_questao_1[0]}`
+            alternativa_2.innerText = `B) ${respotas_quimica_materia_questao_1[1]}`
+            alternativa_3.innerText = `C) ${respotas_quimica_materia_questao_1[2]}`
+            alternativa_4.innerText = `D) ${respotas_quimica_materia_questao_1[3]}`
+            alternativa_5.innerText = `E) ${respotas_quimica_materia_questao_1[4]}`
+        }
+        if (conteudo_atual == 5) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Qual foi o primeiro modelo atômico proposto na história da ciência?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_quimica_modelosatomicos_questao_1[0]}`
+            alternativa_2.innerText = `B) ${respotas_quimica_modelosatomicos_questao_1[1]}`
+            alternativa_3.innerText = `C) ${respotas_quimica_modelosatomicos_questao_1[2]}`
+            alternativa_4.innerText = `D) ${respotas_quimica_modelosatomicos_questao_1[3]}`
+            alternativa_5.innerText = `E) ${respotas_quimica_modelosatomicos_questao_1[4]}`
+        }
     }
     if (materia_atual == 3) {
         /* ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ PORTUGUES ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ */
@@ -618,6 +857,26 @@ function questao_2_click() {
             alternativa_3.innerText = `C) ${respotas_quimica_balanceamento_questao_2[2]}`
             alternativa_4.innerText = `D) ${respotas_quimica_balanceamento_questao_2[3]}`
             alternativa_5.innerText = `E) ${respotas_quimica_balanceamento_questao_2[4]}`
+        }
+        if (conteudo_atual == 4) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">A matéria pode ser classificada em substâncias puras e misturas. Qual das alternativas a seguir representa uma substância pura?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_quimica_materia_questao_2[0]}`
+            alternativa_2.innerText = `B) ${respotas_quimica_materia_questao_2[1]}`
+            alternativa_3.innerText = `C) ${respotas_quimica_materia_questao_2[2]}`
+            alternativa_4.innerText = `D) ${respotas_quimica_materia_questao_2[3]}`
+            alternativa_5.innerText = `E) ${respotas_quimica_materia_questao_2[4]}`
+        }
+        if (conteudo_atual == 5) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">No modelo atômico de Rutherford, o átomo é descrito como:</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_quimica_modelosatomicos_questao_2[0]}`
+            alternativa_2.innerText = `B) ${respotas_quimica_modelosatomicos_questao_2[1]}`
+            alternativa_3.innerText = `C) ${respotas_quimica_modelosatomicos_questao_2[2]}`
+            alternativa_4.innerText = `D) ${respotas_quimica_modelosatomicos_questao_2[3]}`
+            alternativa_5.innerText = `E) ${respotas_quimica_modelosatomicos_questao_2[4]}`
         }
     }
     if (materia_atual == 3) {
@@ -704,6 +963,26 @@ function questao_3_click() {
             alternativa_4.innerText = `D) ${respotas_quimica_balanceamento_questao_3[3]}`
             alternativa_5.innerText = `E) ${respotas_quimica_balanceamento_questao_3[4]}`
         }
+        if (conteudo_atual == 4) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Qual é a definição correta de densidade?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_quimica_materia_questao_3[0]}`
+            alternativa_2.innerText = `B) ${respotas_quimica_materia_questao_3[1]}`
+            alternativa_3.innerText = `C) ${respotas_quimica_materia_questao_3[2]}`
+            alternativa_4.innerText = `D) ${respotas_quimica_materia_questao_3[3]}`
+            alternativa_5.innerText = `E) ${respotas_quimica_materia_questao_3[4]}`
+        }
+        if (conteudo_atual == 5) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">O modelo atômico de Thomson, também conhecido como "pudim de passas", descreve o átomo como:</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_quimica_modelosatomicos_questao_3[0]}`
+            alternativa_2.innerText = `B) ${respotas_quimica_modelosatomicos_questao_3[1]}`
+            alternativa_3.innerText = `C) ${respotas_quimica_modelosatomicos_questao_3[2]}`
+            alternativa_4.innerText = `D) ${respotas_quimica_modelosatomicos_questao_3[3]}`
+            alternativa_5.innerText = `E) ${respotas_quimica_modelosatomicos_questao_3[4]}`
+        }
     }
     if (materia_atual == 3) {
         /* ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ PORTUGUES ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ */
@@ -789,6 +1068,26 @@ function questao_4_click() {
             alternativa_4.innerText = `D) ${respotas_quimica_balanceamento_questao_4[3]}`
             alternativa_5.innerText = `E) ${respotas_quimica_balanceamento_questao_4[4]}`
         }
+        if (conteudo_atual == 4) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">A transformação de uma substância do estado sólido para o estado gasoso, sem passar pelo estado líquido, é denominada:</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_quimica_materia_questao_4[0]}`
+            alternativa_2.innerText = `B) ${respotas_quimica_materia_questao_4[1]}`
+            alternativa_3.innerText = `C) ${respotas_quimica_materia_questao_4[2]}`
+            alternativa_4.innerText = `D) ${respotas_quimica_materia_questao_4[3]}`
+            alternativa_5.innerText = `E) ${respotas_quimica_materia_questao_4[4]}`
+        }
+        if (conteudo_atual == 5) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Qual foi a principal contribuição do modelo atômico de Bohr?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_quimica_modelosatomicos_questao_4[0]}`
+            alternativa_2.innerText = `B) ${respotas_quimica_modelosatomicos_questao_4[1]}`
+            alternativa_3.innerText = `C) ${respotas_quimica_modelosatomicos_questao_4[2]}`
+            alternativa_4.innerText = `D) ${respotas_quimica_modelosatomicos_questao_4[3]}`
+            alternativa_5.innerText = `E) ${respotas_quimica_modelosatomicos_questao_4[4]}`
+        }
     }
     if (materia_atual == 3) {
         /* ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ PORTUGUES ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ */
@@ -873,6 +1172,26 @@ function questao_5_click() {
             alternativa_3.innerText = `C) ${respotas_quimica_balanceamento_questao_5[2]}`
             alternativa_4.innerText = `D) ${respotas_quimica_balanceamento_questao_5[3]}`
             alternativa_5.innerText = `E) ${respotas_quimica_balanceamento_questao_5[4]}`
+        }
+        if (conteudo_atual == 4) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Qual das alternativas a seguir melhor define o conceito de elemento químico?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_quimica_materia_questao_5[0]}`
+            alternativa_2.innerText = `B) ${respotas_quimica_materia_questao_5[1]}`
+            alternativa_3.innerText = `C) ${respotas_quimica_materia_questao_5[2]}`
+            alternativa_4.innerText = `D) ${respotas_quimica_materia_questao_5[3]}`
+            alternativa_5.innerText = `E) ${respotas_quimica_materia_questao_5[4]}`
+        }
+        if (conteudo_atual == 5) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Qual das afirmações a seguir está correta sobre o modelo de Dalton?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_quimica_modelosatomicos_questao_5[0]}`
+            alternativa_2.innerText = `B) ${respotas_quimica_modelosatomicos_questao_5[1]}`
+            alternativa_3.innerText = `C) ${respotas_quimica_modelosatomicos_questao_5[2]}`
+            alternativa_4.innerText = `D) ${respotas_quimica_modelosatomicos_questao_5[3]}`
+            alternativa_5.innerText = `E) ${respotas_quimica_modelosatomicos_questao_5[4]}`
         }
     }
     if (materia_atual == 3) {
@@ -1366,7 +1685,183 @@ function respondido_alternativa() {
                     alternativa_certa_som.play()
                 }
             }
-        }     
+        }
+        /* ~~~~~~~~~~~~~~~~ MATÉRIA ~~~~~~~~~~~~~~~*/
+        if (conteudo_atual == 4) {
+            if (questao_atual == 1) {
+                if (alternativa_selecionada == 4) {
+                    alternativa_4.style.backgroundColor = `rgb(0, 128, 0)`
+      
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
+            }
+            if (questao_atual == 2) {
+                if (alternativa_selecionada == 2) {
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                } 
+            }
+            if (questao_atual == 3) {
+                if (alternativa_selecionada == 2) {
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
+            }
+            if (questao_atual == 4) {
+                if (alternativa_selecionada == 1) {
+                    alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
+
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
+            }
+            if (questao_atual == 5) {
+                if (alternativa_selecionada == 1) {
+                    alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
+            }
+        }
+        /* ~~~~~~~~~~~~~~~~ MODELOS ATÓMICOS ~~~~~~~~~~~~~~~*/
+        if (conteudo_atual == 5) {
+            if (questao_atual == 1) {
+                if (alternativa_selecionada == 3) {
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+      
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
+            }
+            if (questao_atual == 2) {
+                if (alternativa_selecionada == 3) {
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                } 
+            }
+            if (questao_atual == 3) {
+                if (alternativa_selecionada == 2) {
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
+            }
+            if (questao_atual == 4) {
+                if (alternativa_selecionada == 3) {
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
+            }
+            if (questao_atual == 5) {
+                if (alternativa_selecionada == 1) {
+                    alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/acerto.mp3')
+                    alternativa_certa_som.play()
+                } else {
+                    alternativa_1.style.backgroundColor = `rgb(0, 128, 0)`
+                    alternativa_2.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_3.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_4.style.backgroundColor = `rgb(128, 0, 0)`
+                    alternativa_5.style.backgroundColor = `rgb(128, 0, 0)`
+                    
+                    var alternativa_certa_som = new Audio('audios/errado.mp3')
+                    alternativa_certa_som.play()
+                }
+            }
+        }
     }
     /* ~~~~~~~~~~~~~~~~ PORTUGUES ~~~~~~~~~~~~~~~*/
     if (materia_atual == 3) {
