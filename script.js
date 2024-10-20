@@ -56,6 +56,32 @@ let respotas_portugues_sentidofigurado_questao_3 = ['Comi um peixe delicioso no 
 let respotas_portugues_sentidofigurado_questao_4 = ['Ela é muito “raiz”, prefere as coisas simples.', 'Esse problema tem suas raízes na infância.', 'A raiz da árvore está exposta.', 'O racismo é a raiz de muitos problemas sociais.', 'A raiz do cabelo dela é escura.']
 let respotas_portugues_sentidofigurado_questao_5 = ['A luz do quarto estava apagada.', 'Ele foi a luz que iluminou minha vida.', 'A luz do sol estava forte pela manhã.', 'Faltou luz na casa durante a tempestade.', 'Preciso de luz para conseguir enxergar melhor.']
 
+let respotas_portugues_barroco_questao_1 = ['poesia épico-amorosa e obras dramáticas.', 'poesia satírica e contos burlescos.', 'poesia lírica, de caráter religioso e amoroso, e poesia satírica.', 'poesia confessional e autos religiosos.', 'poesia lírica e teatro de costumes.']
+let respotas_portugues_barroco_questao_2 = ['metáfora', 'aliteração', 'eufemismo', 'antítese', 'sinédoque']
+let respotas_portugues_barroco_questao_3 = ['Apenas I', 'Apenas II', 'Apenas III', 'Apenas I e III', 'I, II e III']
+let respotas_portugues_barroco_questao_4 = ['gongorismo, caracterizado pelo jogo de idéias.', 'cultismo, caracterizado pela exploração da sonoridade das palavras.', 'cultismo, caracterizado pelo conflito entre fé e razão.', 'conceptismo, caracterizado pelo vocabulário preciosista e pela exploração de aliterações.', 'conceptismo, caracterizado pela exploração das relações lógicas, da argumentação.']
+let respotas_portugues_barroco_questao_5 = ['simples; a antítese; parnasiana.', 'rebuscada; a antítese; barroca.', 'objetiva; a metáfora; simbolista.', 'subjetiva; o verso livre; romântica.', 'detalhada; o subjetivismo; simbolista.']
+
+let respotas_portugues_arcadismo_questao_1 = ['Apenas III está correta.', 'Nenhuma está correta.', 'Apenas II está correta.', 'I e II estão corretas.', 'Todas estão corretas.']
+let respotas_portugues_arcadismo_questao_2 = ['Teve início no contexto da Abolição da escravatura e da Proclamação da República.', 'Teve início durante a Revolução Industrial.', 'Teve início durante a Revolução Industrial.', 'Teve início durante a transição do regime monárquico para o regime republicano.', 'Teve início em meio ao Iluminismo.']
+let respotas_portugues_arcadismo_questao_3 = ['Relato do cotidiano e nacionalismo.', 'Idealização da arte pela arte.', 'Bucolismo e idealização da mulher.', 'Dualismo e riqueza de detalhes.', 'Nacionalismo e pessimismo.']
+let respotas_portugues_arcadismo_questao_4 = ['“Missal”, de Cruz e Souza.', '“O Mulato”, de Aluísio de Azevedo.', '“Fanfarras”, de Teófilo Dias.', '“Suspiros Poéticos e Saudades”, de Gonçalves de Magalhães', '“Obras Poéticas”, de Cláudio Manuel da Costa.']
+let respotas_portugues_arcadismo_questao_5 = ['Apenas I está correta', 'Todas estão corretas', 'Nenhuma está correta', 'Apenas II está correta', 'Apenas a I e II estão corretas']
+
+let respotas_portugues_romantismo_questao_1 = ['A morenninha', 'Inocência', 'Clarissa', 'Rosa', 'A Escrava Isaura']
+let respotas_portugues_romantismo_questao_2 = ['identifica-se aos poetas da segunda geração romântica no que se refere à concepção da natureza como refúgio', 'afasta-se, nesse sentido, de outros poetas, como Fagundes Varela, que consideram o campo um antídoto para os males da cidade', 'trata a natureza da mesma forma que o poeta árcade que o antecedeu', 'antecipa o comportamento do poeta parnasiano que se entusiasma com a realidade exterior', 'idealiza a natureza da pátria, buscando preservar a sua simplicidade e pureza, tal como Gonçalves Dias']
+let respotas_portugues_romantismo_questao_3 = ['2-3-2-1-2-1', '1-3-2-1-2-3', '3-2-2-1-2-2', '2-1-2-2-1-1', '3-3-2-2-1-1']
+let respotas_portugues_romantismo_questao_4 = ['Aparentemente idealista, foi, na realidade, o primeiro momento do Naturalismo Literário.', 'Cultivando o passado, procurou formas de compreender e explicar o presente.', 'Pregando a liberdade formal, manteve-se preso aos modelos legados pelos clássicos.', 'Embora marcado por tendências liberais, opôs-se ao nacionalismo político.', 'Voltado para temas nacionalistas, desinteressou-se do elemento exótico, incompatível com a exaltação da pátria.']
+let respotas_portugues_romantismo_questao_5 = ['três fases: a poesia da natureza e indianista, a poesia individualista e subjetiva, e a poesia liberal e social.', 'duas fases: a histórica e indianista, e a fase subjetiva e individualista.', 'três fases: a subjetiva, a nacionalista e a experimental.', 'quatro fases: a histórica, a de crítica nacionalista, a experimental e a subjetiva.', 'duas fases: a amorosa e sentimental e a fase nacionalista.']
+
+let respotas_portugues_naturalismorealismo_questao_1 = ['O Naturalismo, por seus princípios científicos, considerava as narrativas literárias exemplos de demonstração de teses e ideias sobre a sociedade e o homem.', 'O Naturalismo usou elementos da natureza selvagem do Brasil do século XIX para defender teses sobre os defeitos da cultura primitiva.', 'A valorização da natureza rude verificada nos poetas árcades se prolonga na visão naturalista do século XIX, que toma a natureza decadente dos cortiços para provar os malefícios da mestiçagem.', 'O Naturalismo no Brasil esteve sempre ligado à beleza das paisagens das cidades e do interior do Brasil.', 'O Naturalismo do século XIX no Brasil difundiu na literatura uma linguagem científica e hermética, fazendo com que os textos literários fossem lidos apenas por intelectuais.']
+let respotas_portugues_naturalismorealismo_questao_2 = ['Uma compreensão psicológica do Homem.', 'Uma compreensão biológica do Mundo.', 'Uma concepção idealista do Universo.', 'Uma concepção religiosa da Vida.', 'Uma visão sentimental da Natureza.']
+let respotas_portugues_naturalismorealismo_questao_3 = ['se volta para a Natureza a fim de analisar-lhe os processos cíclicos de renovação', 'pretende expressar com naturalidade a vida simples dos homens rústicos nas comunidades primitivas.', 'defende a arte pela arte, isto é, desvinculada de compromissos com a realidade social.', 'analisa as perversões sexuais, condenando-as em nome da moral religiosa.', 'estabelece um nexo de causa e efeito entre alguns fatores sociológicos e biológicos e a conduta das personagens.']
+let respotas_portugues_naturalismorealismo_questao_4 = ['Objetivismo; subordinação dos sentimentos a interesses sociais; críticas às instituições decadentes da sociedade burguesa', 'Idealização do herói; amor visto como redenção; oposição aos valores sociais', 'Casamento visto como arranjo de conveniência; descrição objetiva; idealização da mulher', 'Linguagem metafórica; protagonista tratado como anti-herói; sentimentalismo', 'Espírito de aventura; narrativa lenta; impasse amoroso solucionado pelo final feliz']
+let respotas_portugues_naturalismorealismo_questao_5 = ['Preocupação em justificar, à luz da razão, as reações das personagens, seus procedimentos e os problemas sentimentais e metafísicos apresentados', 'A apresentação do homem como um ser dominado pelos instintos, taras, pela carga hereditária, em detrimento da razão', 'A preocupação em retratar a realidade como ela é, sem transformá-la. O autor, ao relatar, deverá estar baseado na documentação e observação da realidade', 'amor é visto unicamente sob o aspecto da sexualidade e apresentado como uma mera satisfação de instintos animais', 'Aspectos descritivos e minuciosos, sempre que possível, baseados na observação da realidade e do subjetivismo e sentimentalismo do autor']
+
+
+
 /* editar texto para alterar o nome da materia selecionada =======================================================================================*/
 let materia_selecionada = document.getElementById("materia_selecionada")
 
@@ -75,10 +101,8 @@ conteudo_2.addEventListener("click", conteudo_2_click)
 conteudo_3.addEventListener("click", conteudo_3_click)
 conteudo_4.addEventListener("click", conteudo_4_click)
 conteudo_5.addEventListener("click", conteudo_5_click)
-
-/*
 conteudo_6.addEventListener("click", conteudo_6_click)
-*/
+
 
 
 /* area para rodar video ou texto e para separar as questões ====================================================================================*/
@@ -130,6 +154,10 @@ function selecionado_fisica_materia() {
 
     conteudo_1.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_2.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_3.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_4.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_5.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_6.style.backgroundColor = `rgb(255, 255, 255)`
 
     questao_1.style.backgroundColor = `rgb(255, 255, 255)`
     questao_2.style.backgroundColor = `rgb(255, 255, 255)`
@@ -152,6 +180,9 @@ function selecionado_fisica_materia() {
     conteudo_5.style.width = `0em`
     conteudo_5.style.height = `0em`
     conteudo_5.innerText = ``
+    conteudo_6.style.width = `0em`
+    conteudo_6.style.height = `0em`
+    conteudo_6.innerText = ``
 }
 function selecionado_quimica_materia() {
     materia_atual = 2
@@ -168,6 +199,8 @@ function selecionado_quimica_materia() {
     conteudo_2.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_3.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_4.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_5.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_6.style.backgroundColor = `rgb(255, 255, 255)`
 
     questao_1.style.backgroundColor = `rgb(255, 255, 255)`
     questao_2.style.backgroundColor = `rgb(255, 255, 255)`
@@ -190,6 +223,9 @@ function selecionado_quimica_materia() {
     conteudo_5.style.width = `20em`
     conteudo_5.style.height = `2em`
     conteudo_5.innerText = `Modelos Atômicos`
+    conteudo_6.style.width = `0em`
+    conteudo_6.style.height = `0em`
+    conteudo_6.innerText = ``
 }
 function selecionado_portugues_materia() {
     materia_atual = 3
@@ -204,6 +240,10 @@ function selecionado_portugues_materia() {
 
     conteudo_1.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_2.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_3.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_4.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_5.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_6.style.backgroundColor = `rgb(255, 255, 255)`
 
     questao_1.style.backgroundColor = `rgb(255, 255, 255)`
     questao_2.style.backgroundColor = `rgb(255, 255, 255)`
@@ -217,15 +257,18 @@ function selecionado_portugues_materia() {
     conteudo_2.style.width = `20em`
     conteudo_2.style.height = `2em`
     conteudo_2.innerText = `"Sentido Figurado"`
-    conteudo_3.style.width = `0em`
-    conteudo_3.style.height = `0em`
-    conteudo_3.innerText = ``
-    conteudo_4.style.width = `0em`
-    conteudo_4.style.height = `0em`
-    conteudo_4.innerText = ``
-    conteudo_5.style.width = `0em`
-    conteudo_5.style.height = `0em`
-    conteudo_5.innerText = ``
+    conteudo_3.style.width = `20em`
+    conteudo_3.style.height = `2em`
+    conteudo_3.innerText = `Barroco`
+    conteudo_4.style.width = `20em`
+    conteudo_4.style.height = `2em`
+    conteudo_4.innerText = `Arcadismo`
+    conteudo_5.style.width = `20em`
+    conteudo_5.style.height = `2em`
+    conteudo_5.innerText = `Romantismo`
+    conteudo_6.style.width = `20em`
+    conteudo_6.style.height = `2em`
+    conteudo_6.innerText = `Naturalismo e Realismo`
 }
 
 /* Funções ao selecionar um dos conteudos ===================================================================================================*/
@@ -235,6 +278,7 @@ function conteudo_1_click() {
     conteudo_3.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_4.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_5.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_6.style.backgroundColor = `rgb(255, 255, 255)`
     
     questao_1.style.backgroundColor = `rgb(255, 255, 255)`
     questao_2.style.backgroundColor = `rgb(255, 255, 255)`
@@ -332,6 +376,7 @@ function conteudo_2_click() {
     conteudo_3.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_4.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_5.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_6.style.backgroundColor = `rgb(255, 255, 255)`
 
     questao_1.style.backgroundColor = `rgb(255, 255, 255)`
     questao_2.style.backgroundColor = `rgb(255, 255, 255)`
@@ -429,6 +474,7 @@ function conteudo_3_click() {
     conteudo_3.style.backgroundColor = `rgb(120, 120, 120)`
     conteudo_4.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_5.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_6.style.backgroundColor = `rgb(255, 255, 255)`
 
     
     questao_1.style.backgroundColor = `rgb(255, 255, 255)`
@@ -500,7 +546,7 @@ function conteudo_3_click() {
         linha_2.style.width = `90%`;
         linha_2.style.height = `0.25em`;
         
-        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/cMVti1H1ASE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
         
         area_questoes.style.width = `30%`;
         area_questoes.style.height = `35vw`;
@@ -527,6 +573,7 @@ function conteudo_4_click() {
     conteudo_3.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_4.style.backgroundColor = `rgb(120, 120, 120)`
     conteudo_5.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_6.style.backgroundColor = `rgb(255, 255, 255)`
     
     questao_1.style.backgroundColor = `rgb(255, 255, 255)`
     questao_2.style.backgroundColor = `rgb(255, 255, 255)`
@@ -597,7 +644,7 @@ function conteudo_4_click() {
         linha_2.style.width = `90%`;
         linha_2.style.height = `0.25em`;
         
-        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/-ko2O_3gijM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
         
         area_questoes.style.width = `30%`;
         area_questoes.style.height = `35vw`;
@@ -624,6 +671,7 @@ function conteudo_5_click() {
     conteudo_3.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_4.style.backgroundColor = `rgb(255, 255, 255)`
     conteudo_5.style.backgroundColor = `rgb(120, 120, 120)`
+    conteudo_6.style.backgroundColor = `rgb(255, 255, 255)`
     
     questao_1.style.backgroundColor = `rgb(255, 255, 255)`
     questao_2.style.backgroundColor = `rgb(255, 255, 255)`
@@ -694,7 +742,105 @@ function conteudo_5_click() {
         linha_2.style.width = `90%`;
         linha_2.style.height = `0.25em`;
         
+        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/jz_As_nzSUA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        
+        area_questoes.style.width = `30%`;
+        area_questoes.style.height = `35vw`;
+        
+        questao_1.innerText = `Questão - 1`;
+        questao_2.innerText = `Questão - 2`;
+        questao_3.innerText = `Questão - 3`;
+        questao_4.innerText = `Questão - 4`;
+        questao_5.innerText = `Questão - 5`;
+        
+        alternativas_area.style.width = `0%`;
+        alternativas_area.style.height = `0em`;
+        
+        alternativa_1.innerText = ``;
+        alternativa_2.innerText = ``;
+        alternativa_3.innerText = ``;
+        alternativa_4.innerText = ``;
+        alternativa_5.innerText = ``;
+    }
+}
+function conteudo_6_click() {
+    conteudo_1.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_2.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_3.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_4.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_5.style.backgroundColor = `rgb(255, 255, 255)`
+    conteudo_6.style.backgroundColor = `rgb(120, 120, 120)`
+    
+    questao_1.style.backgroundColor = `rgb(255, 255, 255)`
+    questao_2.style.backgroundColor = `rgb(255, 255, 255)`
+    questao_3.style.backgroundColor = `rgb(255, 255, 255)`
+    questao_4.style.backgroundColor = `rgb(255, 255, 255)`
+    questao_5.style.backgroundColor = `rgb(255, 255, 255)`
+    if (materia_atual == 1) {
+        conteudo_atual = 6;
+
+        creditos.style.marginTop = `5%`;
+
+        linha_2.style.width = `90%`;
+        linha_2.style.height = `0.25em`;
+
         video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        
+        area_questoes.style.width = `30%`;
+        area_questoes.style.height = `35vw`;
+
+        questao_1.innerText = `Questão - 1`;
+        questao_2.innerText = `Questão - 2`;
+        questao_3.innerText = `Questão - 3`;
+        questao_4.innerText = `Questão - 4`;
+        questao_5.innerText = `Questão - 5`;
+
+        alternativas_area.style.width = `0%`;
+        alternativas_area.style.height = `0em`;
+
+        alternativa_1.innerText = ``;
+        alternativa_2.innerText = ``;
+        alternativa_3.innerText = ``;
+        alternativa_4.innerText = ``;
+        alternativa_5.innerText = ``;
+    }
+    if (materia_atual == 2) {
+        conteudo_atual = 6;
+
+        creditos.style.marginTop = `5%`;
+
+        linha_2.style.width = `90%`;
+        linha_2.style.height = `0.25em`;
+
+        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        
+        area_questoes.style.width = `30%`;
+        area_questoes.style.height = `35vw`;
+        
+        questao_1.innerText = `Questão - 1`;
+        questao_2.innerText = `Questão - 2`;
+        questao_3.innerText = `Questão - 3`;
+        questao_4.innerText = `Questão - 4`;
+        questao_5.innerText = `Questão - 5`;
+        
+        alternativas_area.style.width = `0%`;
+        alternativas_area.style.height = `0em`;
+        
+        alternativa_1.innerText = ``;
+        alternativa_2.innerText = ``;
+        alternativa_3.innerText = ``;
+        alternativa_4.innerText = ``;
+        alternativa_5.innerText = ``;
+    }
+    if (materia_atual == 3) {
+        conteudo_atual = 6;
+
+        creditos.style.marginTop = `5%`;
+        
+        linha_2.style.width = `90%`;
+        linha_2.style.height = `0.25em`;
+        
+        video_aula.innerHTML = `<iframe id="video" src="https://www.youtube.com/embed/pkc2MP-sHT4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
         
         area_questoes.style.width = `30%`;
         area_questoes.style.height = `35vw`;
@@ -830,6 +976,46 @@ function questao_1_click() {
             alternativa_4.innerText = `D) ${respotas_portugues_sentidofigurado_questao_1[3]}`
             alternativa_5.innerText = `E) ${respotas_portugues_sentidofigurado_questao_1[4]}`
         }
+        if (conteudo_atual == 3) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">A obra de Gregório de Matos – autor que se destaca na literatura barroca brasileira – compreende</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_barroco_questao_1[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_barroco_questao_1[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_barroco_questao_1[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_barroco_questao_1[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_barroco_questao_1[4]}`
+        }
+        if (conteudo_atual == 4) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Sobre o Arcadismo é correto afirmar:<br>I. É uma escola literária que, no Brasil, compreendeu o período entre 1768-1808, e antecede o Romantismo.<br>II. Também é conhecido como Setecentismo e Neoclassicismo.<br>II. Fugere urbem, Locus amoenus e Carpe diem são expressões em latim que expressam tendências árcades.</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_arcadismo_questao_1[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_arcadismo_questao_1[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_arcadismo_questao_1[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_arcadismo_questao_1[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_arcadismo_questao_1[4]}`
+        }
+        if (conteudo_atual == 5) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Entre as obras mais comentadas do Visconde de Taunay estão: O Encilhamento, A Retirada da Laguna e, principalmente, o romance:</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_romantismo_questao_1[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_romantismo_questao_1[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_romantismo_questao_1[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_romantismo_questao_1[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_romantismo_questao_1[4]}`
+        }
+        if (conteudo_atual == 6) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Assinale a alternativa que contém a afirmação correta sobre o Naturalismo no Brasil</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_naturalismorealismo_questao_1[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_naturalismorealismo_questao_1[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_naturalismorealismo_questao_1[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_naturalismorealismo_questao_1[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_naturalismorealismo_questao_1[4]}`
+        }
     }
 }
 /* ====================================================== QUESTÃO 2 ====================================================== */
@@ -944,6 +1130,46 @@ function questao_2_click() {
             alternativa_3.innerText = `C) ${respotas_portugues_sentidofigurado_questao_2[2]}`
             alternativa_4.innerText = `D) ${respotas_portugues_sentidofigurado_questao_2[3]}`
             alternativa_5.innerText = `E) ${respotas_portugues_sentidofigurado_questao_2[4]}`
+        }
+        if (conteudo_atual == 3) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">"Em tristes sombras morre a formosura,<br>em contínuas tristezas a alegria"<br>Nos versos citados acima, Gregório de Matos empregou uma figura de linguagem que consiste em aproximar termos de significados opostos, como “tristezas” e “alegria”. O nome desta figura de linguagem é:</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_barroco_questao_2[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_barroco_questao_2[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_barroco_questao_2[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_barroco_questao_2[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_barroco_questao_2[4]}`
+        }
+        if (conteudo_atual == 4) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">O Arcadismo é a terceira escola literária brasileira e, junto com o Quinhentismo (1500-1601) e com o Barroco (1601-1768), fazem parte da Era Colonial. É conhecida como Setecentismo, porque surgiu nos anos 1700, e como Neoclassicismo, porque retomou valores referentes ao Classicismo - um movimento artístico que surgiu durante o Renascimento, na Europa. A expressão Fugere urbem reflete a valorização da vida simples, do campo, tal como Locus amoenus expressa a importância de viver em um lugar tranquilo, longe da cidade. Carpe diem, por sua vez, revela o desejo de aproveitar cada momento que a vida oferece. Todas essas expressões expressam características do Arcadismo<br>Acerca do contexto histórico do Arcadismo, quais as alternativas certas?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_arcadismo_questao_2[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_arcadismo_questao_2[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_arcadismo_questao_2[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_arcadismo_questao_2[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_arcadismo_questao_2[4]}`
+        }
+        if (conteudo_atual == 5) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">A palavra de Castro Alves seria, no contexto em que se inseriu, uma palavra aberta à realidade da nação, indignando-se o poeta com o problema do escravo e entusiasmando-se com o progresso e a técnica que já atingiam o meio rural. Esse último aspecto permite afirmar que Castro Alves</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_romantismo_questao_2[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_romantismo_questao_2[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_romantismo_questao_2[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_romantismo_questao_2[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_romantismo_questao_2[4]}`
+        }
+        if (conteudo_atual == 6) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">“E naquela terra encharcada e fumegante, naquela umidade quente e lodosa, começou a minhocar, e esfervilhar, a crescer, um mundo, uma coisa viva, uma geração, que parecia brotar espontânea, ali mesmo, daquele lameiro, a multiplicar-se como larvas no esterco.”<br>O fragmento de “O cortiço”, romance de Aluísio Azevedo, apresenta uma característica fundamental do Naturalismo. Qual?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_naturalismorealismo_questao_2[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_naturalismorealismo_questao_2[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_naturalismorealismo_questao_2[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_naturalismorealismo_questao_2[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_naturalismorealismo_questao_2[4]}`
         }
     }
 }
@@ -1060,6 +1286,46 @@ function questao_3_click() {
             alternativa_4.innerText = `D) ${respotas_portugues_sentidofigurado_questao_3[3]}`
             alternativa_5.innerText = `E) ${respotas_portugues_sentidofigurado_questao_3[4]}`
         }
+        if (conteudo_atual == 3) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Considere as seguintes afirmações sobre o Barroco brasileiro:<br>I. A arte barroca caracteriza-se por apresentar dualidades, conflitos, paradoxos e contrastes, que convivem tensamente na unidade da obra.<br>II. O conceptismo e o cultismo, expressões da poesia barroca, apresentam um imaginário bucólico, sempre povoado de pastoras e ninfas.<br>III. A oposição entre Reforma e Contra-Reforma expressa, no plano religioso, os mesmos dilemas de que o Barroco se ocupa</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_barroco_questao_3[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_barroco_questao_3[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_barroco_questao_3[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_barroco_questao_3[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_barroco_questao_3[4]}`
+        }
+        if (conteudo_atual == 4) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">São características do Arcadismo:</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_arcadismo_questao_3[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_arcadismo_questao_3[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_arcadismo_questao_3[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_arcadismo_questao_3[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_arcadismo_questao_3[4]}`
+        }
+        if (conteudo_atual == 5) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Numere a coluna da esquerda, de acordo com a coluna da direita, tendo em vista a poesia romântica brasileira:<br><br>1. primeira geração<br>2. segunda geração<br>3. terceira geração<br><br>( ) abolicionismo<br>( ) condoreirismo<br>( ) autocomiseração exacerbada<br>( ) obsessão pela morte<br>( ) indianismo<br>( ) nacionalismo</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_romantismo_questao_3[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_romantismo_questao_3[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_romantismo_questao_3[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_romantismo_questao_3[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_romantismo_questao_3[4]}`
+        }
+        if (conteudo_atual == 6) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Pode-se entender o Naturalismo como uma particularização do Realismo que:</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_naturalismorealismo_questao_3[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_naturalismorealismo_questao_3[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_naturalismorealismo_questao_3[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_naturalismorealismo_questao_3[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_naturalismorealismo_questao_3[4]}`
+        }
     }
 }
 /* ====================================================== QUESTÃO 4 ====================================================== */
@@ -1175,6 +1441,46 @@ function questao_4_click() {
             alternativa_4.innerText = `D) ${respotas_portugues_sentidofigurado_questao_4[3]}`
             alternativa_5.innerText = `E) ${respotas_portugues_sentidofigurado_questao_4[4]}`
         }
+        if (conteudo_atual == 3) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">"Quando jovem, Antônio Vieira acreditava nas palavras, especialmente nas que eram ditas com fé. No entanto, todas as palavras que ele dissera, nos púlpitos, na salas de aula, nas reuniões, nas catequeses, nos corredores, nos ouvidos dos reis, clérigos, inquisidores, duques, marqueses, ouvidores, governadores, ministros, presidentes, rainhas, príncipes, indígenas, desses milhões de palavras ditas com esforço de pensamento, poucas - ou nenhuma delas - havia surtido efeito. O mundo continuava exatamente o de sempre. O homem, igual a si mesmo." (Ana Miranda, BOCA DO INFERNO)<br>Essa passagem do texto faz referência a um traço da linguagem barroca presente na obra de Vieira; trata-se do:</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_barroco_questao_4[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_barroco_questao_4[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_barroco_questao_4[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_barroco_questao_4[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_barroco_questao_4[4]}`
+        }
+        if (conteudo_atual == 4) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">O Arcadismo no Brasil surgiu em 1768. Que obra marcou o seu início?</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_arcadismo_questao_4[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_arcadismo_questao_4[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_arcadismo_questao_4[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_arcadismo_questao_4[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_arcadismo_questao_4[4]}`
+        }
+        if (conteudo_atual == 5) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Poderíamos sintetizar uma das características do Romantismo pela seguinte aproximação de opostos:</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_romantismo_questao_4[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_romantismo_questao_4[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_romantismo_questao_4[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_romantismo_questao_4[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_romantismo_questao_4[4]}`
+        }
+        if (conteudo_atual == 6) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Assinale a alternativa em que se encontram características da prosa do Realismo.</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_naturalismorealismo_questao_4[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_naturalismorealismo_questao_4[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_naturalismorealismo_questao_4[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_naturalismorealismo_questao_4[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_naturalismorealismo_questao_4[4]}`
+        }
     }
 }
 /* ====================================================== QUESTÃO 5 ====================================================== */
@@ -1289,6 +1595,46 @@ function questao_5_click() {
             alternativa_3.innerText = `C) ${respotas_portugues_sentidofigurado_questao_5[2]}`
             alternativa_4.innerText = `D) ${respotas_portugues_sentidofigurado_questao_5[3]}`
             alternativa_5.innerText = `E) ${respotas_portugues_sentidofigurado_questao_5[4]}`
+        }
+        if (conteudo_atual == 3) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">(UCS) Escolha a alternativa que completa de forma correta a frase abaixo:<br>A linguagem ________, o paradoxo, ________ e o registro das impressões sensoriais são recursos linguísticos presentes na poesia ________.</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_barroco_questao_5[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_barroco_questao_5[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_barroco_questao_5[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_barroco_questao_5[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_barroco_questao_5[4]}`
+        }
+        if (conteudo_atual == 4) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Sobre a obra Marília de Dirceu é correto afirmar:<br>I. Tem caráter autobiográfico, sendo Marília o sujeito lírico de Maria Joaquina Dorotéia Seixas, amor proibido de Tomás Antônio Gonzaga.<br>II. Contém as seguintes características árcades: exaltação ao bucolismo, linguagem coloquial, culto à simplicidade.<br>III. Está dividida em três partes: a primeira tem como foco a exaltação da amada, a segunda expressa sentimento de solidão, enquanto a terceira é fortemente marcada pelo pessimismo.</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_arcadismo_questao_5[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_arcadismo_questao_5[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_arcadismo_questao_5[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_arcadismo_questao_5[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_arcadismo_questao_5[4]}`
+        }
+        if (conteudo_atual == 5) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">Assinale a alternativa correta.<br>A poesia brasileira do Romantismo do século XIX pode ser dividida em:</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_romantismo_questao_5[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_romantismo_questao_5[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_romantismo_questao_5[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_romantismo_questao_5[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_romantismo_questao_5[4]}`
+        }
+        if (conteudo_atual == 6) {
+            video_aula.innerHTML = `<div id="questoes"><p id="pergunta_1">(CEFET-PR) Assinale a alternativa que melhor caracteriza o Realismo</p></div>`
+            alternativas_area.style.width = `75%`
+            alternativas_area.style.height = `30vw`
+            alternativa_1.innerText = `A) ${respotas_portugues_naturalismorealismo_questao_5[0]}`
+            alternativa_2.innerText = `B) ${respotas_portugues_naturalismorealismo_questao_5[1]}`
+            alternativa_3.innerText = `C) ${respotas_portugues_naturalismorealismo_questao_5[2]}`
+            alternativa_4.innerText = `D) ${respotas_portugues_naturalismorealismo_questao_5[3]}`
+            alternativa_5.innerText = `E) ${respotas_portugues_naturalismorealismo_questao_5[4]}`
         }
     }
 }
